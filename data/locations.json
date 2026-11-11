@@ -63,11 +63,11 @@
       },
       {
         type: 'Feature',
-        geometry: { type: 'Point', coordinates: [] },
+        geometry: { type: 'Point', coordinates: [-37.871695508606486, 175.68723640536055] },
         properties: {
-          title: '', 
+          title: 'The Shire', 
           description: '', 
-          time: '', 
+          time: '2000', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
             iconSize: [40, 40],
@@ -78,11 +78,11 @@
       },
       {
         type: 'Feature',
-        geometry: { type: 'Point', coordinates: [] },
+        geometry: { type: 'Point', coordinates: [-39.1731353485876, 175.51483022857957] },
         properties: {
-          title: '', 
+          title: 'The Forbidden Pool', 
           description: '', 
-          time: '', 
+          time: '2000', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
             iconSize: [40, 40],
@@ -93,11 +93,11 @@
       },
       {
         type: 'Feature',
-        geometry: { type: 'Point', coordinates: [] },
+        geometry: { type: 'Point', coordinates: [-41.06737054949341, 175.19828435142864] },
         properties: {
-          title: '', 
+          title: 'Rivendell', 
           description: '', 
-          time: '', 
+          time: '2000', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
             iconSize: [40, 40],
@@ -108,11 +108,11 @@
       },
       {
         type: 'Feature',
-        geometry: { type: 'Point', coordinates: [] },
+        geometry: { type: 'Point', coordinates: [-43.58952823468205, 170.17286974165245] },
         properties: {
-          title: '', 
+          title: 'Minas Tirith', 
           description: '', 
-          time: '', 
+          time: '2000',
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
             iconSize: [40, 40],
