@@ -33,11 +33,11 @@
       },
       {
         type: 'Feature',
-        geometry: { type: 'Point', coordinates: [] },
+        geometry: { type: 'Point', coordinates: [-41.06048123886671, 175.17999799513936] },
         properties: {
-          title: '', 
+          title: 'River Anduin', 
           description: '', 
-          time: '', 
+          time: '1999', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
             iconSize: [40, 40],
@@ -48,11 +48,11 @@
       },
       {
         type: 'Feature',
-        geometry: { type: 'Point', coordinates: [] },
+        geometry: { type: 'Point', coordinates: [-44.6789718368819, 168.4698363786169] },
         properties: {
-          title: '', 
+          title: 'Isengard', 
           description: '', 
-          time: '', 
+          time: '1999', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
             iconSize: [40, 40],
