@@ -1,13 +1,13 @@
 // for putting on index in script
 
-    const dataset1 = [
+    const dataset = [
       {
         type: 'Feature',
-        geometry: { type: 'Point', coordinates: [] },
+        geometry: { type: 'Point', coordinates: [-41.295328823921686, 174.79076311840768] },
         properties: {
-          title: '', 
+          title: 'Hobbiton Woods', 
           description: '', 
-          time: '', 
+          time: '1999', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
             iconSize: [40, 40],
@@ -18,11 +18,11 @@
       },
       {
         type: 'Feature',
-        geometry: { type: 'Point', coordinates: [] },
+        geometry: { type: 'Point', coordinates: [-43.54787539485398, 170.89367509416562] },
         properties: {
-          title: '', 
+          title: 'Erodas', 
           description: '', 
-          time: '', 
+          time: '1999', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
             iconSize: [40, 40],
