@@ -71,14 +71,14 @@
 
 <div id="map" style="height: 900px"></div>
 
-<!-- Opens the dialog on page load -->
+// modal on page load
 <script type="module">
 import * as bootstrap from 'https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js';
 
 bootstrap.Dialog.getOrCreateInstance('#overlay').show();
 </script>
 
-<!-- Map -->
+// map
 <script type="module">
 import { LeafletMap, TileLayer } from 'leaflet';
 
