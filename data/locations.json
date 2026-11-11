@@ -198,11 +198,11 @@
       },
       {
         type: 'Feature',
-        geometry: { type: 'Point', coordinates: [] },
+        geometry: { type: 'Point', coordinates: [28.254133841460938, -16.61727042243518] },
         properties: {
-          title: '', 
+          title: 'Eastern lands of Rhûn', 
           description: '', 
-          time: '', 
+          time: '2022', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
             iconSize: [40, 40],
@@ -213,11 +213,56 @@
       },
       {
         type: 'Feature',
-        geometry: { type: 'Point', coordinates: [] },
+        geometry: { type: 'Point', coordinates: [51.779738355239886, -2.609672532214938] },
         properties: {
-          title: '', 
+          title: 'Forest of Dean', 
           description: '', 
-          time: '', 
+          time: '2023', 
+          icon: {
+            iconUrl: 'assets/icons8-ring-40.png', 
+            iconSize: [40, 40],
+            iconAnchor: [20, 40],
+            popupAnchor: [0, -40]
+          },
+        }
+      },
+      {
+        type: 'Feature',
+        geometry: { type: 'Point', coordinates: [51.66110616662456, -3.8231372983400926] },
+        properties: {
+          title: 'Numenor', 
+          description: '', 
+          time: '2023', 
+          icon: {
+            iconUrl: 'assets/icons8-ring-40.png', 
+            iconSize: [40, 40],
+            iconAnchor: [20, 40],
+            popupAnchor: [0, -40]
+          },
+        }
+      },
+       {
+        type: 'Feature',
+        geometry: { type: 'Point', coordinates: [51.42422341122429, -0.6172488226549504] },
+        properties: {
+          title: 'Battle of the Gwathló', 
+          description: '', 
+          time: '2025', 
+          icon: {
+            iconUrl: 'assets/icons8-ring-40.png', 
+            iconSize: [40, 40],
+            iconAnchor: [20, 40],
+            popupAnchor: [0, -40]
+          },
+        }
+      },
+             {
+        type: 'Feature',
+        geometry: { type: 'Point', coordinates: [46.59365382607691, 7.919727655346315] },
+        properties: {
+          title: 'Rivendell 2.0', 
+          description: '', 
+          time: '2025', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
             iconSize: [40, 40],
