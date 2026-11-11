@@ -111,7 +111,7 @@
         geometry: { type: 'Point', coordinates: [-43.58952823468205, 170.17286974165245] },
         properties: {
           title: 'Minas Tirith', 
-          description: '', 
+          description: 'Mount Cook (Aoraki) in New Zealand served as the backdrop for Minas Tirith in the films. The majestic mountain provided the dramatic setting for the city of Gondor. The White City itself shared a set with Helm's Deeo.',
           time: '2000',
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
@@ -126,7 +126,7 @@
         geometry: { type: 'Point', coordinates: [-45.34556202562199, 167.94006541205712] },
         properties: {
           title: 'Fangorn Forest', 
-          description: '', 
+          description: 'The interior of Fangorn Forest was filmed in Snowdon Forest near Te Anau off Takaro Road in New Zealand. The dense, ancient trees and moss-covered landscape provided the perfect setting for the scenes involving the Ents and the mysterious forest. The filming location was later repurposed for the Mirkwood in The Hobbit trilogy.',
           time: '2000',
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
