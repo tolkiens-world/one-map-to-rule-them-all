@@ -36,7 +36,7 @@
         geometry: { type: 'Point', coordinates: [-41.06048123886671, 175.17999799513936] },
         properties: {
           title: 'River Anduin', 
-          description: '', 
+          description: 'The production team combined several New Zealand waterways to create the River Anduin for the films. The Hutt River played a major role alongside the South Island rivers. The stretch of the Hutt River around Poet's Park was used for the scenes where the fellowship launches their elven boats.',
           time: '1999', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
