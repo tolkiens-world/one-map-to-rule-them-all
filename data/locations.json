@@ -123,11 +123,11 @@
       },
       {
         type: 'Feature',
-        geometry: { type: 'Point', coordinates: [] },
+        geometry: { type: 'Point', coordinates: [-45.34556202562199, 167.94006541205712] },
         properties: {
-          title: '', 
+          title: 'Fangorn Forest', 
           description: '', 
-          time: '', 
+          time: '2000',
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
             iconSize: [40, 40],
@@ -138,11 +138,11 @@
       },
       {
         type: 'Feature',
-        geometry: { type: 'Point', coordinates: [] },
+        geometry: { type: 'Point', coordinates: [-39.15629747820435, 175.63566760409176] },
         properties: {
-          title: '', 
+          title: 'Mount Doom', 
           description: '', 
-          time: '', 
+          time: '2000', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
             iconSize: [40, 40],
