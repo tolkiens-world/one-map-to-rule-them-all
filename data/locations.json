@@ -6,7 +6,7 @@
         geometry: { type: 'Point', coordinates: [-41.295328823921686, 174.79076311840768] },
         properties: {
           title: 'Hobbiton Woods', 
-          description: '', 
+          description: 'The Wooded Road sequence for the <i>Fellowship of the Ring</i> where the hibbits hide from mounted Ringwraiths. This took place in Mount Victoria New Zealand.',
           time: '1999', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
