@@ -153,11 +153,11 @@
       },
       {
         type: 'Feature',
-        geometry: { type: 'Point', coordinates: [] },
+        geometry: { type: 'Point', coordinates: [53.30522496005973, -2.3758522169894] },
         properties: {
-          title: '', 
+          title: 'Battle of the Somme', 
           description: '', 
-          time: '', 
+          time: '2017', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
             iconSize: [40, 40],
@@ -168,11 +168,11 @@
       },
       {
         type: 'Feature',
-        geometry: { type: 'Point', coordinates: [] },
+        geometry: { type: 'Point', coordinates: [53.48643483229861, -2.2424256997843726] },
         properties: {
-          title: '', 
+          title: 'Oxford University Library', 
           description: '', 
-          time: '', 
+          time: '2017', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
             iconSize: [40, 40],
@@ -183,11 +183,11 @@
       },
       {
         type: 'Feature',
-        geometry: { type: 'Point', coordinates: [] },
+        geometry: { type: 'Point', coordinates: [53.32080246089381, -3.045671426024209] },
         properties: {
-          title: '', 
+          title: 'Sarehole', 
           description: '', 
-          time: '', 
+          time: '2017',
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
             iconSize: [40, 40],
