@@ -100,13 +100,13 @@ dialog.drawer-end .drawer-panel .drawer-body {
 .navbar-brand {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #212529;
+  color: #b6a71f;
   text-decoration: none;
 }
 
 .bg-1 {
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #dee2e6;
+  background-color: #011e08;
+  border-bottom: 1px solid #011e08;
 }
 
 .fg-2 {
