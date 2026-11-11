@@ -1,0 +1,112 @@
+// stylelint-disable-next-line scss/dollar-variable-default
+$navbar-tokens: defaults(
+  (
+    --navbar-padding-x: 0,
+    --navbar-padding-y: .5rem,
+    --navbar-min-height: 3.5rem,
+    --navbar-color: var(--fg-2),
+    --navbar-hover-color: var(--fg-1),
+    --navbar-disabled-color: var(--fg-3),
+    --navbar-active-color: var(--fg-body),
+    --navbar-brand-padding-y: .375rem, // Match nav link padding-y
+    --navbar-brand-margin-end: 1rem,
+    --navbar-brand-font-size: var(--font-size-md),
+    --navbar-brand-font-weight: var(--font-weight-medium),
+    --navbar-brand-color: var(--fg-body),
+    --navbar-brand-hover-color: var(--fg-body),
+    --navbar-nav-link-padding-x: .75rem,
+    --navbar-toggler-width: 2rem,
+    --navbar-toggler-padding-y: .25rem,
+    --navbar-toggler-padding-x: .75rem,
+    --navbar-toggler-font-size: var(--font-size-lg),
+    --navbar-toggler-border-color: color-mix(in oklch, var(--fg-body) 15%, transparent),
+    --navbar-toggler-border-radius: var(--radius-5),
+    --navbar-toggler-transition: box-shadow .15s ease-in-out,
+    --navbar-toggler-icon-size: 1.25rem,
+    --navbar-toggler-icon: #{escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path stroke='black' stroke-linecap='round' stroke-width='1' d='M1 3.5h14M1 8h14M1 12.5h14'/></svg>"))},
+  ),
+  $navbar-tokens
+);
+
+// Generate series of responsive `.navbar-expand` classes for configuring
+// where your navbar collapses and expands. Uses container queries so the
+// navbar responds to its own width, not the viewport width.
+
+// Mixin for expanded state styles (applied to descendants)
+@mixin navbar-expanded {
+  // Style the inner container since we can't style .navbar itself with container queries
+  > .container,
+  > .container-fluid,
+  %navbar-expand-container {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .navbar-nav {
+    --nav-link-padding-x: var(--navbar-nav-link-padding-x);
+    flex-direction: row;
+  }
+
+  .navbar-toggler {
+    display: none !important; // stylelint-disable-line declaration-no-important
+  }
+
+  [class*="drawer"] {
+    // stylelint-disable declaration-no-important
+    // Reset native <dialog> UA styles and below-breakpoint drawer styles.
+    // Must use !important to override both UA <dialog> defaults and the
+    // responsive drawer styles from media-breakpoint-down().
+    position: static !important;
+    inset: auto !important;
+    z-index: auto;
+    display: flex !important;
+    flex-grow: 1;
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+    max-height: none !important;
+    padding: 0;
+    margin: 0;
+    overflow: visible !important;
+    visibility: visible !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    transform: none !important;
+    @include box-shadow(none);
+    @include transition(none);
+    // stylelint-enable declaration-no-important
+
+    .drawer-header {
+      display: none !important; // stylelint-disable-line declaration-no-important
+    }
+
+    .drawer-body {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+      overflow-y: visible;
+    }
+  }
+}
+
+// Always expanded (no responsive behavior)
+.navbar-expand {
+  @include navbar-expanded();
+
+  // Also set on navbar itself for non-responsive case
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+// Responsive navbar expand classes using container queries
+@include loop-breakpoints-down($navbar-breakpoints) using ($breakpoint, $next, $prefix) {
+  @if $next {
+    .#{$prefix}navbar-expand {
+      @include container-breakpoint-up($next) {
+        @include navbar-expanded();
+      }
+    }
+  }
+}
