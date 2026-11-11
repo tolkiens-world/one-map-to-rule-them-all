@@ -21,7 +21,7 @@
         geometry: { type: 'Point', coordinates: [-43.54787539485398, 170.89367509416562] },
         properties: {
           title: 'Erodas', 
-          description: '', 
+          description: 'Erodas took eleven months to build and was filmed for around three weeks in 1999. A construction team lived on site for the better part of a year, every piece of set including horsehair was removed to preserve the Mountain's pristine conditions.', 
           time: '1999', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
