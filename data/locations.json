@@ -51,7 +51,7 @@
         geometry: { type: 'Point', coordinates: [-44.6789718368819, 168.4698363786169] },
         properties: {
           title: 'Isengard', 
-          description: '', 
+          description: 'Isengard's exterior was filmed in the Dart Valley near Glenorchy in New Zealand. Mount Earnslaw served as the dramatic mountain backdrop. The tower itself was built as a 15-foot-tall miniature at a 1/35 scale.', 
           time: '1999', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
