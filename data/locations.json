@@ -81,7 +81,7 @@
         geometry: { type: 'Point', coordinates: [-39.1731353485876, 175.51483022857957] },
         properties: {
           title: 'The Forbidden Pool', 
-          description: '', 
+          description: 'Andy Serkis didn't join the cast until 2000, which meant that the scenes involving Gollum were filmed later in the production schedule. The fish-catching scene where Faramir's rangers capture Gollum was shot on the Mangawhero River on the southern flank of Mount Ruapehu. Serkis wore a thick wetsuit under his costume and spent long periods in near-freezing water.',
           time: '2000', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
