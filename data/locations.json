@@ -96,7 +96,7 @@
         geometry: { type: 'Point', coordinates: [-41.06737054949341, 175.19828435142864] },
         properties: {
           title: 'Rivendell', 
-          description: '', 
+          description: 'Rivendell was filmed in the Kaitoke Regional Park in New Zealand. The location provided the lush, forested setting for the home of Elrond and the site of the Council of Elrond. The park has a signposted Rivendell display near the filming site for visitors to enjoy.',
           time: '2000', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
