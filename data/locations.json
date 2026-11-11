@@ -66,7 +66,7 @@
         geometry: { type: 'Point', coordinates: [-37.871695508606486, 175.68723640536055] },
         properties: {
           title: 'The Shire', 
-          description: '', 
+          description: 'Peter Jackson's location scouts found the location for Hobbiton in September 1998 while flying over Waikato looking for a place to film the Shire. The Hobbiton set was carved into a hillside under a New Zealand Army earthworks operation that took nine months. The rebuilt of the Hobbiton set after The Hobbit trilogy was kept as a permanent fixture of the landscape and is the only LOTR set that exists to date.', 
           time: '2000', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
