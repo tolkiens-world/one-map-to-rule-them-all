@@ -508,6 +508,7 @@ dialog.drawer.drawer-end {
 }
 
 dialog.drawer-end .drawer-panel {
+  font-family: 'Cinzel', serif;
   width: min(300px, 100%);
   height: 100%;
   background: #023e10;
@@ -526,6 +527,7 @@ dialog.drawer-end .drawer-panel .drawer-body {
 }
 
 .drawer-header {
+  font-family: 'Cinzel', serif;
   padding: 1rem;
   border-bottom: 1px solid #e9ecef;
   display: flex;
@@ -534,6 +536,7 @@ dialog.drawer-end .drawer-panel .drawer-body {
 }
 
 .drawer-title {
+  font-family: 'Cinzel', serif;
   margin: 0;
   font-size: 1.25rem;
 }
@@ -651,6 +654,7 @@ dialog.drawer-end .drawer-panel .drawer-body {
 }
 
 .site-footer {
+  font-family: 'Cinzel', serif;
   padding-block: 1.25rem;
   font-size: 0.9rem;
 }
@@ -664,10 +668,12 @@ dialog.drawer-end .drawer-panel .drawer-body {
 
 .site-footer p,
 .site-footer ul {
+  font-family: 'Cinzel', serif;
   margin: 0;
 }
 
 .site-footer-links {
+  font-family: 'Cinzel', serif;
   display: flex;
   gap: 1.25rem;
   padding: 0;
@@ -675,6 +681,7 @@ dialog.drawer-end .drawer-panel .drawer-body {
 }
 
 .site-footer a {
+  font-family: 'Cinzel', serif;
   color: inherit;
   text-decoration: none;
 }
