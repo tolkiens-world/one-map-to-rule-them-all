@@ -74,7 +74,7 @@
 
 <div id="map" style="height: 900px"></div>
 
-// modal on page load
+// modal
 <script type="module">
 import * as bootstrap from 'https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js';
 
@@ -83,7 +83,7 @@ bootstrap.Dialog.getOrCreateInstance('#overlay').show();
 
 // map
 <script type="module">
-import { LeafletMap, TileLayer } from 'leaflet';
+import { LeafletMap, TileLayer, Marker } from 'leaflet';
 
 const map = new LeafletMap('map').setView([-41.292466, 174.778864], 6);
 
@@ -91,6 +91,10 @@ new TileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
 }).addTo(map);
+
+new Marker([-41.295328823921686, 174.79076311840768]).addTo(map)
+    .bindPopup('A pretty CSS popup.<br>Easily customizable.')
+    .openPopup();
 </script>
 
 <script src="js/script.js"></script>
