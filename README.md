@@ -44,7 +44,7 @@ To add a location, append an entry to the JSON file and drop the image in `img/`
 ## Built with
 
 - [Leaflet 2.0.0-beta.2](https://leafletjs.com/) for the map, loaded from jsDelivr through an import map
-- [Bootstrap 5.3](https://getbootstrap.com/) for layout, the intro modal, and the slider bar
+- [Bootstrap 6.0.0-alpha.1](https://getbootstrap.com/) for layout, the intro modal, and the slider bar
 - [OpenStreetMap](https:www.openstreetmap.org/) for the basemap tiles
 - Hosted on GitHub Pages
 
