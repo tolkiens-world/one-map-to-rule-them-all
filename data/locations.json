@@ -231,7 +231,7 @@
         geometry: { type: 'Point', coordinates: [51.42422341122429, -0.6172488226549504] },
         properties: {
           title: 'Battle of the Gwathló', 
-          description: '', 
+          description: 'Great Windsor Park provided the backdrop for the Battle of the Gwathló scenes in the Rings of Power series. The park has previously been used to film for Harry Potter and the Deathly Hallows and World War Z. Unsurprisingly, it was chosen for its expansive and dramatic landscape.',
           time: '2025', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
