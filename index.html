@@ -83,7 +83,7 @@ bootstrap.Dialog.getOrCreateInstance('#overlay').show();
 
 <!-- map -->
 <script type="module">
-import { Map as LeafletMap, TileLayer, Marker, GeoJSON } from 'leaflet';
+import { Map as LeafletMap, TileLayer, Marker, GeoJSON, Icon } from 'leaflet';
 
 const map = new LeafletMap('map').setView([-41.292466, 174.778864], 6);
 
@@ -95,7 +95,15 @@ new TileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 const res = await fetch('./data/locations.json');
 const data = await res.json();
 
+const myIcon = new Icon({
+  iconUrl: 'assets/icons8-ring-40.png',
+  iconSize: [40, 40],
+  iconAnchor: [20, 40],
+  popupAnchor: [0, -40]
+});
+
 new GeoJSON(data, {
+  pointToLayer: (feature, latlng) => new Marker(latlng, { icon: myIcon }),
   style: feature => ({ color: feature.properties.color })
 })
   .bindPopup(layer => layer.feature.properties.description)
