@@ -156,7 +156,7 @@
         geometry: { type: 'Point', coordinates: [53.30522496005973, -2.3758522169894] },
         properties: {
           title: 'Battle of the Somme', 
-          description: '', 
+          description: 'The war and trench scenes depicting the Battle of the Somme were filmed in the Tatton Estate in Greater Manchester, England. Production spent months constructing elaborate sets and trenches to recreate the conditions of the battlefield.',
           time: '2017', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
