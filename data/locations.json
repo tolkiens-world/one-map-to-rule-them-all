@@ -171,7 +171,7 @@
         geometry: { type: 'Point', coordinates: [53.48643483229861, -2.2424256997843726] },
         properties: {
           title: 'Oxford University Library', 
-          description: '', 
+          description: 'Despite being educated at Oxford University, the library scenes for the Tolkien biopic were actually filmed in several different locations. One of the primary filming locations for the educational content was Chetham's Library in Manchester.', 
           time: '2017', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
