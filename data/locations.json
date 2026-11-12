@@ -186,7 +186,7 @@
         geometry: { type: 'Point', coordinates: [53.32080246089381, -3.045671426024209] },
         properties: {
           title: 'Sarehole', 
-          description: '', 
+          description: 'Thorton Hough village green was used as a filming location for scenes in the Tolkien biopic, providing a picturesque and historic setting for the production. ',
           time: '2017',
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
