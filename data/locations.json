@@ -1,274 +1,275 @@
-// for putting on index in script
-
-    const dataset = [
-      {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [-41.295328823921686, 174.79076311840768] },
-        properties: {
-          title: 'Hobbiton Woods', 
-          description: 'The Wooded Road sequence for the <i>Fellowship of the Ring</i> where the hibbits hide from mounted Ringwraiths. This took place in Mount Victoria New Zealand.',
-          time: '1999', 
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
-          },
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-41.295328823921686, 174.79076311840768] },
+      "properties": {
+        "title": "Hobbiton Woods", 
+        "description": "The Wooded Road sequence for the <i>Fellowship of the Ring</i> where the hibbits hide from mounted Ringwraiths. This took place in Mount Victoria New Zealand.",
+        "time": "1999", 
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
         }
-      },
-      {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [-43.54787539485398, 170.89367509416562] },
-        properties: {
-          title: 'Erodas', 
-          description: 'Erodas took eleven months to build and was filmed for around three weeks in 1999. A construction team lived on site for the better part of a year, every piece of set including horsehair was removed to preserve the Mountain's pristine conditions.', 
-          time: '1999', 
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
-          },
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-43.54787539485398, 170.89367509416562] },
+      "properties": {
+        "title": "Erodas", 
+        "description": "Erodas took eleven months to build and was filmed for around three weeks in 1999. A construction team lived on site for the better part of a year, every piece of set including horsehair was removed to preserve the Mountain's pristine conditions.", 
+        "time": "1999", 
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
         }
-      },
-      {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [-41.06048123886671, 175.17999799513936] },
-        properties: {
-          title: 'River Anduin', 
-          description: 'The production team combined several New Zealand waterways to create the River Anduin for the films. The Hutt River played a major role alongside the South Island rivers. The stretch of the Hutt River around Poet's Park was used for the scenes where the fellowship launches their elven boats.',
-          time: '1999', 
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
-          },
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-41.06048123886671, 175.17999799513936] },
+      "properties": {
+        "title": "River Anduin", 
+        "description": "The production team combined several New Zealand waterways to create the River Anduin for the films. The Hutt River played a major role alongside the South Island rivers. The stretch of the Hutt River around Poet's Park was used for the scenes where the fellowship launches their elven boats.",
+        "time": "1999", 
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
         }
-      },
-      {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [-44.6789718368819, 168.4698363786169] },
-        properties: {
-          title: 'Isengard', 
-          description: 'Isengard's exterior was filmed in the Dart Valley near Glenorchy in New Zealand. Mount Earnslaw served as the dramatic mountain backdrop. The tower itself was built as a 15-foot-tall miniature at a 1/35 scale. Earnslaw returned in The Hobbit as The Misty Mountains in <i> An Unexpected Journey</i>.', 
-          time: '1999', 
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
-          },
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-44.6789718368819, 168.4698363786169] },
+      "properties": {
+        "title": "Isengard", 
+        "description": "Isengard's exterior was filmed in the Dart Valley near Glenorchy in New Zealand. Mount Earnslaw served as the dramatic mountain backdrop. The tower itself was built as a 15-foot-tall miniature at a 1/35 scale. Earnslaw returned in The Hobbit as The Misty Mountains in <i> An Unexpected Journey</i>.", 
+        "time": "1999", 
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
         }
-      },
-      {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [-37.871695508606486, 175.68723640536055] },
-        properties: {
-          title: 'The Shire', 
-          description: 'Peter Jackson's location scouts found the location for Hobbiton in September 1998 while flying over Waikato looking for a place to film the Shire. The Hobbiton set was carved into a hillside under a New Zealand Army earthworks operation that took nine months. The rebuilt of the Hobbiton set after The Hobbit trilogy was kept as a permanent fixture of the landscape and is the only LOTR set that exists to date.', 
-          time: '2000', 
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
-          },
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-37.871695508606486, 175.68723640536055] },
+      "properties": {
+        "title": "The Shire", 
+        "description": "Peter Jackson's location scouts found the location for Hobbiton in September 1998 while flying over Waikato looking for a place to film the Shire. The Hobbiton set was carved into a hillside under a New Zealand Army earthworks operation that took nine months. The rebuilt of the Hobbiton set after The Hobbit trilogy was kept as a permanent fixture of the landscape and is the only LOTR set that exists to date.", 
+        "time": "2000", 
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
         }
-      },
-      {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [-39.1731353485876, 175.51483022857957] },
-        properties: {
-          title: 'The Forbidden Pool', 
-          description: 'Andy Serkis didn't join the cast until 2000, which meant that the scenes involving Gollum were filmed later in the production schedule. The fish-catching scene where Faramir's rangers capture Gollum was shot on the Mangawhero River on the southern flank of Mount Ruapehu. Serkis wore a thick wetsuit under his costume and spent long periods in near-freezing water.',
-          time: '2000', 
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
-          },
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-39.1731353485876, 175.51483022857957] },
+      "properties": {
+        "title": "The Forbidden Pool", 
+        "description": "Andy Serkis didn't join the cast until 2000, which meant that the scenes involving Gollum were filmed later in the production schedule. The fish-catching scene where Faramir's rangers capture Gollum was shot on the Mangawhero River on the southern flank of Mount Ruapehu. Serkis wore a thick wetsuit under his costume and spent long periods in near-freezing water.",
+        "time": "2000", 
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
         }
-      },
-      {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [-41.06737054949341, 175.19828435142864] },
-        properties: {
-          title: 'Rivendell', 
-          description: 'Rivendell was filmed in the Kaitoke Regional Park in New Zealand. The location provided the lush, forested setting for the home of Elrond and the site of the Council of Elrond. The park has a signposted Rivendell display near the filming site for visitors to enjoy.',
-          time: '2000', 
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
-          },
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-41.06737054949341, 175.19828435142864] },
+      "properties": {
+        "title": "Rivendell", 
+        "description": "Rivendell was filmed in the Kaitoke Regional Park in New Zealand. The location provided the lush, forested setting for the home of Elrond and the site of the Council of Elrond. The park has a signposted Rivendell display near the filming site for visitors to enjoy.",
+        "time": "2000", 
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
         }
-      },
-      {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [-43.58952823468205, 170.17286974165245] },
-        properties: {
-          title: 'Minas Tirith', 
-          description: 'Mount Cook (Aoraki) in New Zealand served as the backdrop for Minas Tirith in the films. The majestic mountain provided the dramatic setting for the city of Gondor. The White City itself shared a set with Helm's Deeo.',
-          time: '2000',
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
-          },
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-43.58952823468205, 170.17286974165245] },
+      "properties": {
+        "title": "Minas Tirith", 
+        "description": "Mount Cook (Aoraki) in New Zealand served as the backdrop for Minas Tirith in the films. The majestic mountain provided the dramatic setting for the city of Gondor. The White City itself shared a set with Helm's Deeo.",
+        "time": "2000",
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
         }
-      },
+      }
+    },
       {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [-45.34556202562199, 167.94006541205712] },
-        properties: {
-          title: 'Fangorn Forest', 
-          description: 'The interior of Fangorn Forest was filmed in Snowdon Forest near Te Anau off Takaro Road in New Zealand. The dense, ancient trees and moss-covered landscape provided the perfect setting for the scenes involving the Ents and the mysterious forest. The filming location was later repurposed for the Mirkwood in The Hobbit trilogy.',
-          time: '2000',
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
-          },
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-45.34556202562199, 167.94006541205712] },
+      "properties": {
+        "title": "Fangorn Forest", 
+        "description": "The interior of Fangorn Forest was filmed in Snowdon Forest near Te Anau off Takaro Road in New Zealand. The dense, ancient trees and moss-covered landscape provided the perfect setting for the scenes involving the Ents and the mysterious forest. The filming location was later repurposed for the Mirkwood in The Hobbit trilogy.",
+        "time": "2000",
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
         }
-      },
+      }
+    },
       {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [-39.15629747820435, 175.63566760409176] },
-        properties: {
-          title: 'Mount Doom', 
-          description: 'Production got larger in 2000, with the addition of new sets and locations to accommodate the expanding scope of the films. Wood and Astin started shooting scenes at Mount Ruapehu for Mount Doom. The mountain itself was never directed filmed on out of respect for the Tapu.',
-          time: '2000', 
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
-          },
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-39.15629747820435, 175.63566760409176] },
+      "properties": {
+        "title": "Mount Doom", 
+        "description": "Production got larger in 2000, with the addition of new sets and locations to accommodate the expanding scope of the films. Wood and Astin started shooting scenes at Mount Ruapehu for Mount Doom. The mountain itself was never directed filmed on out of respect for the Tapu.",
+        "time": "2000", 
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
         }
-      },
+      }
+    },
       {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [53.30522496005973, -2.3758522169894] },
-        properties: {
-          title: 'Battle of the Somme', 
-          description: 'The war and trench scenes depicting the Battle of the Somme were filmed in the Tatton Estate in Greater Manchester, England. Production spent months constructing elaborate sets and trenches to recreate the conditions of the battlefield.',
-          time: '2017', 
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
-          },
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [53.30522496005973, -2.3758522169894] },
+      "properties": {
+        "title": "Battle of the Somme", 
+        "description": "The war and trench scenes depicting the Battle of the Somme were filmed in the Tatton Estate in Greater Manchester, England. Production spent months constructing elaborate sets and trenches to recreate the conditions of the battlefield.",
+        "time": "2017", 
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
         }
-      },
+      }
+    },
       {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [53.48643483229861, -2.2424256997843726] },
-        properties: {
-          title: 'Oxford University Library', 
-          description: 'Despite being educated at Oxford University, the library scenes for the Tolkien biopic were actually filmed in several different locations. One of the primary filming locations for the educational content was Chetham's Library in Manchester.', 
-          time: '2017', 
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
-          },
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [53.48643483229861, -2.2424256997843726] },
+      "properties": {
+        "title": "Oxford University Library", 
+        "description": "Despite being educated at Oxford University, the library scenes for the Tolkien biopic were actually filmed in several different locations. One of the primary filming locations for the educational content was Chetham's Library in Manchester.", 
+        "time": "2017", 
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
         }
-      },
+      }
+    },
       {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [53.32080246089381, -3.045671426024209] },
-        properties: {
-          title: 'Sarehole', 
-          description: 'Thorton Hough village green was used as a filming location for scenes in the Tolkien biopic, providing a picturesque and historic setting for the production. ',
-          time: '2017',
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
-          },
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [53.32080246089381, -3.045671426024209] },
+      "properties": {
+        "title": "Sarehole", 
+        "description": "Thorton Hough village green was used as a filming location for scenes in the Tolkien biopic, providing a picturesque and historic setting for the production. ",
+        "time": "2017",
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
         }
-      },
+      }
+    },
       {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [28.254133841460938, -16.61727042243518] },
-        properties: {
-          title: 'Eastern lands of Rhûn', 
-          description: 'Tenerife was a primary shooting location for the Eastern lands of Rhûn scenes in the Rings of Power Season 2. Teide National Park and Mount Teide were used for the dramatic Mars-like deserts and journeys where the Stranger and his Harfoot companions travelled to meet Tom Bombadil.',
-          time: '2022', 
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
-          },
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [28.254133841460938, -16.61727042243518] },
+      "properties": {
+        "title": "Eastern lands of Rhûn", 
+        "description": "Tenerife was a primary shooting location for the Eastern lands of Rhûn scenes in the Rings of Power Season 2. Teide National Park and Mount Teide were used for the dramatic Mars-like deserts and journeys where the Stranger and his Harfoot companions travelled to meet Tom Bombadil.",
+        "time": "2022", 
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
         }
-      },
+      }
+    },
       {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [51.66110616662456, -3.8231372983400926] },
-        properties: {
-          title: 'Numenor', 
-          description: 'Founded in 1130, Neath Abbey in Wales was the only existing historic building used for filming production in season 3 of the Rings of Power. Neath Abbey was used as the setting for the ruins of Numenor.',
-          time: '2023', 
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
-          },
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [51.66110616662456, -3.8231372983400926] },
+      "properties": {
+        "title": "Numenor", 
+        "description": "Founded in 1130, Neath Abbey in Wales was the only existing historic building used for filming production in season 3 of the Rings of Power. Neath Abbey was used as the setting for the ruins of Numenor.",
+        "time": "2023", 
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
         }
-      },
+      }
+    },
        {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [51.42422341122429, -0.6172488226549504] },
-        properties: {
-          title: 'Battle of the Gwathló', 
-          description: 'Great Windsor Park provided the backdrop for the Battle of the Gwathló scenes in the Rings of Power series. The park has previously been used to film for Harry Potter and the Deathly Hallows and World War Z. Unsurprisingly, it was chosen for its expansive and dramatic landscape.',
-          time: '2025', 
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [51.42422341122429, -0.6172488226549504] },
+      "properties": {
+        "title": "Battle of the Gwathló", 
+        "description": "Great Windsor Park provided the backdrop for the Battle of the Gwathló scenes in the Rings of Power series. The park has previously been used to film for Harry Potter and the Deathly Hallows and World War Z. Unsurprisingly, it was chosen for its expansive and dramatic landscape.",
+        "time": "2025", 
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
           },
         }
       },
             {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [51.8099, -3.2766] },
-        properties: {
-          title: 'Khazad-dûm',
-          description: 'Trefil Quarry in Wales was used as a filming location for the Khazad-dûm scenes in the Rings of Power series. It's an 18th century limestone quarry with dramatic rock formations and deep caverns, providing a fitting backdrop for the underground realm of the dwarves.',
-          time: '2025', 
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
-          },
-        }
-      },
-             {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [46.59365382607691, 7.919727655346315] },
-        properties: {
-          title: 'Rivendell 2.0', 
-          description: 'Production designer Kristian Milsted and the visual effects team recreated Rivendell from J. R. R. Tolkien's original vacation spot in Lauterbrunnen Valley, Switzerland for the Rings of Power series. They used a VFX from helicopter to scan and map the valley to virtually recreate the scenery in a living set in the UK.', 
-          time: '2025', 
-          icon: {
-            iconUrl: 'assets/icons8-ring-40.png', 
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
-            popupAnchor: [0, -40]
-          },
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [51.8099, -3.2766] },
+      "properties": {
+        "title": "Khazad-dûm",
+        "description": "Trefil Quarry in Wales was used as a filming location for the Khazad-dûm scenes in the Rings of Power series. It's an 18th century limestone quarry with dramatic rock formations and deep caverns, providing a fitting backdrop for the underground realm of the dwarves.",
+        "time": "2025", 
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
         }
       }
-    ];
+    },
+             {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [46.59365382607691, 7.919727655346315] },
+      "properties": {
+        "title": "Rivendell 2.0", 
+        "description": "Production designer Kristian Milsted and the visual effects team recreated Rivendell from J. R. R. Tolkien's original vacation spot in Lauterbrunnen Valley, Switzerland for the Rings of Power series. They used a VFX from helicopter to scan and map the valley to virtually recreate the scenery in a living set in the UK.", 
+        "time": "2025", 
+        "icon": {
+          "iconUrl": "assets/icons8-ring-40.png", 
+          "iconSize": [40, 40],
+          "iconAnchor": [20, 40],
+          "popupAnchor": [0, -40]
+        }
+      }
+    }
+  ]
+}
