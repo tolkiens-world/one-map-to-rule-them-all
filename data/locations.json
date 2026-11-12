@@ -141,7 +141,7 @@
         geometry: { type: 'Point', coordinates: [-39.15629747820435, 175.63566760409176] },
         properties: {
           title: 'Mount Doom', 
-          description: '', 
+          description: 'Production got larger in 2000, with the addition of new sets and locations to accommodate the expanding scope of the films. Wood and Astin started shooting scenes at Mount Ruapehu for Mount Doom. The mountain itself was never directed filmed on out of respect for the Tapu.',
           time: '2000', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
