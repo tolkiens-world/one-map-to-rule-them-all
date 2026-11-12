@@ -201,7 +201,7 @@
         geometry: { type: 'Point', coordinates: [28.254133841460938, -16.61727042243518] },
         properties: {
           title: 'Eastern lands of Rhûn', 
-          description: '', 
+          description: 'Tenerife was a primary shooting location for the Eastern lands of Rhûn scenes in the Rings of Power Season 2. Teide National Park and Mount Teide were used for the dramatic Mars-like deserts and journeys where the Stranger and his Harfoot companions travelled to meet Tom Bombadil.',
           time: '2022', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
@@ -213,9 +213,9 @@
       },
       {
         type: 'Feature',
-        geometry: { type: 'Point', coordinates: [51.779738355239886, -2.609672532214938] },
+        geometry: { type: 'Point', coordinates: [51.8099, -3.2766] },
         properties: {
-          title: 'Forest of Dean', 
+          title: 'Khazad-dûm',
           description: '', 
           time: '2023', 
           icon: {
