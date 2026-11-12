@@ -261,7 +261,7 @@
         geometry: { type: 'Point', coordinates: [46.59365382607691, 7.919727655346315] },
         properties: {
           title: 'Rivendell 2.0', 
-          description: '', 
+          description: 'Production designer Kristian Milsted and the visual effects team recreated Rivendell from J. R. R. Tolkien's original vacation spot in Lauterbrunnen Valley, Switzerland for the Rings of Power series. They used a VFX from helicopter to scan and map the valley to virtually recreate the scenery in a living set in the UK.', 
           time: '2025', 
           icon: {
             iconUrl: 'assets/icons8-ring-40.png', 
