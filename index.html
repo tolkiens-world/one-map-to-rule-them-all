@@ -75,15 +75,7 @@
   <audio id="modal-audio" src="assets/rohan.mp3" loop preload="auto"></audio>
 </div>
 
-<div class="map-wrap">
-  <div id="map" style="height: 900px"></div>
-
-  <div class="timeline" role="group" aria-label="Filter locations by filming year">
-    <label for="timeline-range">Filmed through <span id="timeline-year"></span></label>
-    <input id="timeline-range" type="range" min="0" max="0" step="1" value="0">
-    <ul id="timeline-ticks" class="timeline-ticks" aria-hidden="true"></ul>
-  </div>
-</div>
+<div id="map" style="height: 900px"></div>
 
 <!-- modal -->
 <script type="module">
@@ -120,7 +112,7 @@ overlay.addEventListener('close', () => {
 
 <!-- map -->
 <script type="module">
-import { Map as LeafletMap, TileLayer, Marker, GeoJSON, Icon } from 'leaflet';
+import { Map as LeafletMap, TileLayer, Marker, GeoJSON, Icon, Control, DomUtil, DomEvent } from 'leaflet';
 
 // zoomSnap: 0.5 lets the map sit at half zoom levels, so the 5.5 below is honoured
 // instead of being rounded to 6.
@@ -183,8 +175,8 @@ function popupContent(feature) {
     </article>`;
 }
 
-// Build the layer group and attach the popup to it (but don't add it to the map;
-// showThrough() adds/removes individual markers based on the slider)
+// Build the layer group and attach a popup to each marker (but don't add the group
+// to the map; showThrough() adds/removes individual markers based on the slider)
 const locations = new GeoJSON(data, {
   pointToLayer: (feature, latlng) => new Marker(latlng, { icon: myIcon }),
   onEachFeature: (feature, layer) => {
@@ -196,22 +188,8 @@ const locations = new GeoJSON(data, {
   }
 });
 
-// Define years BEFORE using them
-const years = [...new Set(data.features.map(f => Number(f.properties.time)))]
-  .sort((a, b) => a - b);
-
-const range = document.getElementById('timeline-range');
-const yearLabel = document.getElementById('timeline-year');
-const ticks = document.getElementById('timeline-ticks');
-
-range.max = years.length - 1;
-range.value = years.length - 1;
-ticks.innerHTML = years.map(y => `<li>${y}</li>`).join('');
-
+// Show every marker filmed in or before the given year; hide the rest.
 function showThrough(year) {
-  yearLabel.textContent = year;
-  range.setAttribute('aria-valuetext', `Filmed through ${year}`);
-
   locations.eachLayer(layer => {
     const filmed = Number(layer.feature.properties.time);
     if (filmed <= year) {
@@ -223,8 +201,62 @@ function showThrough(year) {
   });
 }
 
-range.addEventListener('input', () => showThrough(years[Number(range.value)]));
-showThrough(years[Number(range.value)]);
+// ---- Timeline control ----
+// A Leaflet control that steps through the years present in the data.
+// Leaflet places it in the map corner given by `position`, like the zoom buttons.
+
+class TimelineControl extends Control {
+  static defaultOptions = {
+    position: 'bottomleft',
+    years: [],
+    onChange: () => {}
+  };
+
+  onAdd(map) {
+    const { years, onChange } = this.options;
+    const last = years.length - 1;
+
+    // DomUtil.create makes the element and applies the class in one call.
+    const bar = DomUtil.create('div', 'timeline');
+    bar.setAttribute('role', 'group');
+    bar.setAttribute('aria-label', 'Filter locations by filming year');
+    bar.innerHTML = `
+      <label for="timeline-range">Filmed through <span class="timeline-year"></span></label>
+      <input id="timeline-range" type="range" min="0" max="${last}" step="1" value="${last}">
+      <ul class="timeline-ticks" aria-hidden="true">${years.map(y => `<li>${y}</li>`).join('')}</ul>`;
+
+    const range = bar.querySelector('input');
+    const yearLabel = bar.querySelector('.timeline-year');
+
+    const update = () => {
+      const year = years[Number(range.value)];
+      yearLabel.textContent = year;
+      range.setAttribute('aria-valuetext', `Filmed through ${year}`);
+      onChange(year);
+    };
+
+    DomEvent.on(range, 'input', update);
+
+    // The bar lives inside the map container, so without these the map would
+    // treat a drag on the thumb as a pan, a wheel over the bar as a zoom, and
+    // arrow keys on the focused slider as a pan.
+    DomEvent.disableClickPropagation(bar);
+    DomEvent.disableScrollPropagation(bar);
+    DomEvent.on(bar, 'keydown', DomEvent.stopPropagation);
+
+    update();
+    return bar;
+  }
+
+  onRemove(map) {
+    DomEvent.off(this._container);
+  }
+}
+
+const years = [...new Set(data.features.map(f => Number(f.properties.time)))]
+  .sort((a, b) => a - b);
+
+new TimelineControl({ years, onChange: showThrough }).addTo(map);
 </script>
 
 <footer class="site-footer bg-1 fg-2">
