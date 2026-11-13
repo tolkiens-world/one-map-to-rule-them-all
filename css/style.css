@@ -691,6 +691,10 @@ dialog.drawer-end .drawer-panel .drawer-body {
   text-decoration: underline;
 }
 
+.h1 {
+  font-family: 'Cinzel', serif;
+}
+
 /* Stack and center on small screens */
 @media (max-width: 640px) {
   .site-footer-inner {
