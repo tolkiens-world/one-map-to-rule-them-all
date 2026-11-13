@@ -1001,18 +1001,10 @@ dialog.drawer-end .drawer-panel .drawer-body {
   margin: 0 0 1rem;
 }
 
-/* Timeline slider */
-.map-wrap {
-  position: relative;
-}
-
-.timeline {
-  position: absolute;
-  left: 50%;
-  bottom: 2rem;
-  transform: translateX(-50%);
-  z-index: 1000;
-  width: min(36rem, calc(100% - 2rem));
+/* Timeline slider (Leaflet control) */
+.leaflet-control.timeline {
+  width: 36rem;
+  max-width: calc(100vw - 2rem);
   padding: 0.75rem 1rem 0.5rem;
   background: #011e08;
   color: #cbbc2c;
@@ -1045,9 +1037,4 @@ dialog.drawer-end .drawer-panel .drawer-body {
   font-size: 0.7rem;
   letter-spacing: 0.03em;
   opacity: 0.8;
-}
-.production-fields {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.35rem
 }
