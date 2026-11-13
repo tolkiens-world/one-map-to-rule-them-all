@@ -151,6 +151,33 @@ function popupContent(feature) {
 const locations = new GeoJSON(data, {
   pointToLayer: (feature, latlng) => new Marker(latlng, { icon: myIcon })
 })
+
+const range = document.getElementById('timeline-range'); 
+const yearLabel = document.getElementById('timeline-year')
+const ticks = document.getElementById('timeline-ticks');
+
+range.max = years.length - 1;
+range.value = years.length -1;
+
+ticks.innerHTML = years.map(y => `<li>${y}</li>`).join('');
+
+function showThrough(year) {
+    yearLabel.textContent = year;
+    range.setAttribute('aria-valuetext', `Filmed through ${year}`);
+
+    locations.eachLayer(layer => {
+        const filmed = Number(layer.feature.properties.time);
+        if (filmed <= year) {
+            if (!map.hasLayer(layer)) map.addLayer(layer);
+        } else if (map.hasLayer(layer)) {
+            layer.closePopup();
+            map.removeLayer(layer);
+        }
+    });
+}
+
+range.addEventListener('input', () => showThrough(years[Number(range.value)]));
+showThrough(years[Number(range.value)]);
   .bindPopup(layer => popupContent(layer.feature), {
       className: 'omtr-popup-frame',
       minWidth: 260,
