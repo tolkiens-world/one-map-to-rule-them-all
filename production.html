@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>One Map to Rule Them All</title>
+  <title>Production Info | One Map to Rule Them All</title>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
+  <meta name="description" content="Filming locations and behind-the-scenes production notes for every place on the One Map to Rule Them All map.">
   <meta name="author" content="">
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,38 +15,7 @@
 
   <link href="css/style.css" rel="stylesheet" />
 
-  <script type="importmap">
-    {"imports": {
-      "leaflet": "https://cdn.jsdelivr.net/npm/leaflet@2.0.0-beta.2/dist/leaflet.js"
-    }}
-  </script>
-
   <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
- <style>
-    .production-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 2rem;
-    }
-    .production-table th,
-    .production-table td {
-      border: 1px solid #ccc;
-      padding: 0.6rem 0.75rem;
-      vertical-align: top;
-    }
-    .production-table thead th {
-      background: #f2f2f2;
-      text-align: left;
-    }
-    .production-table td.institution,
-    .production-table td.year {
-      font-weight: 600;
-      vertical-align: middle;
-    }
-    .production-table td:empty::after {
-      content: "\00a0";
-    }
-  </style>
 </head>
 <body>
 <nav class="navbar md:navbar-expand bg-1 fg-2">
@@ -83,135 +51,49 @@
 <div class="container my-5">
   <div class="row justify-content-center">
     <div class="col-lg-10">
-      <h1 class="text-center">Filming the Middle Earth Universe</h1>
-      <p>This table provides detailed information about the filming locations for the Lord of the Rings series, including the year, location, film location, and coordinates.</p>
 
-      <table class="production-table">
-        <thead>
-          <tr>
-            <th>Production Filming</th>
-            <th>Year</th>
-            <th>Location</th>
-            <th>Film Location</th>
-            <th>Lat, Long</th>
-          </tr>
-        </thead>
-        <tbody>
+      <header class="production-header">
+        <h1 class="text-center">Filming the Middle Earth Universe</h1>
+        <p>This table lists every filming location on the map by production and year, with the real place, the place it stood in for on screen, and its coordinates. Below the table, each location has its own production notes. Click any location in the table to jump to its notes, or follow the "Production notes" link in a marker's popup on the map.</p>
+        <a class="production-back" href="index.html">Back to the map</a>
+      </header>
 
-          <!-- Lord of the Rings: 10 rows (1999 x4, 2000 x6) -->
-          <tr>
-            <td rowspan="10" class="institution">Lord of the Rings</td>
-            <td rowspan="4" class="year">1999</td>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
-          <tr>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
-          <tr>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
-          <tr>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
-          <tr>
-            <td rowspan="6" class="year">2000</td>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
-          <tr>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
-          <tr>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
-          <tr>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
-          <tr>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
-          <tr>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
+      <h2 class="production-section-title">Locations at a glance</h2>
 
-          <!-- Tolkien Biopic: 3 rows (2017 x3) -->
-          <tr>
-            <td rowspan="3" class="institution">Tolkien Biopic</td>
-            <td rowspan="3" class="year">2017</td>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
-          <tr>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
-          <tr>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
+      <div class="production-table-wrap">
+        <table class="production-table">
+          <thead>
+            <tr>
+              <th>Production Filming</th>
+              <th>Year</th>
+              <th>Location</th>
+              <th>Film Location</th>
+              <th>Lat, Long</th>
+            </tr>
+          </thead>
+          <tbody id="production-table-body">
+            <tr><td colspan="5"><span class="production-placeholder">Loading locations.</span></td></tr>
+          </tbody>
+        </table>
+      </div>
 
-          <!-- Rings of Power: 5 rows (2022 x1, 2023 x1, 2025 x3) -->
-          <tr>
-            <td rowspan="5" class="institution">Rings of Power</td>
-            <td rowspan="1" class="year">2022</td>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
-          <tr>
-            <td rowspan="1" class="year">2023</td>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
-          <tr>
-            <td rowspan="3" class="year">2025</td>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
-          <tr>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
-          <tr>
-            <td class="location"></td>
-            <td class="film-location"></td>
-            <td class="lat-long"></td>
-          </tr>
+      <h2 class="production-section-title">Behind the scenes</h2>
 
-        </tbody>
-      </table>
+      <div class="production-layout">
+        <nav class="production-index" aria-label="Locations">
+          <ul id="production-index-list"></ul>
+        </nav>
+
+        <div id="production-entries" class="production-entries">
+          <p class="production-placeholder">Loading locations.</p>
+        </div>
+      </div>
 
     </div>
   </div>
 </div>
 
-  <script src="js/script.js"></script>
-  <footer class="site-footer bg-1 fg-2">
+<footer class="site-footer bg-1 fg-2">
   <div class="container-fluid d-flex site-footer-inner">
     <p class="site-footer-copy">
       &copy; <span id="year">2026</span> One Map to Rule Them All
@@ -221,5 +103,180 @@
     </p>
   </div>
 </footer>
+
+<script src="js/script.js"></script>
+
+<!-- table and production notes, both rendered from data/locations.json -->
+<script type="module">
+// The behind-the-scenes fields, in the order they appear on the page.
+// Each key is a property in data/locations.json; the label is what readers see.
+const FIELDS = [
+  ['filming_dates', 'Filming dates'],
+  ['scenes', 'Scenes filmed here'],
+  ['set_notes', 'What was built'],
+  ['production_notes', 'Production notes'],
+  ['today', 'The site today']
+];
+
+const PLACEHOLDER = '<span class="production-placeholder">Research pending.</span>';
+
+// Used only when a feature has no "production" property yet.
+// Once the JSON carries "production", that value wins.
+function productionFor(p) {
+  if (p.production) return p.production;
+  const year = Number(p.time);
+  if (year >= 1999 && year <= 2000) return 'Lord of the Rings';
+  if (year >= 2011 && year <= 2012) return 'The Hobbit';
+  if (year === 2017) return 'Tolkien Biopic';
+  if (year >= 2020) return 'Rings of Power';
+  return 'Other productions';
+}
+
+// Same function as index.html, so popup links and section ids always match.
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function slugFor(p) {
+  return p.slug ?? slugify(p.title);
+}
+
+// sources can be a list of URLs or a list of { label, url } objects.
+function sourceList(sources) {
+  if (!Array.isArray(sources) || sources.length === 0) return PLACEHOLDER;
+  const items = sources.map(source => {
+    const url = typeof source === 'string' ? source : source.url;
+    let label = typeof source === 'string' ? '' : (source.label ?? '');
+    if (!label) {
+      try {
+        label = new URL(url).hostname.replace(/^www\./, '');
+      } catch {
+        label = url;
+      }
+    }
+    return `<li><a href="${url}" target="_blank" rel="noopener">${label}</a></li>`;
+  });
+  return `<ul class="production-sources">${items.join('')}</ul>`;
+}
+
+function fieldRows(p) {
+  const rows = FIELDS.map(([key, label]) =>
+    `<dt>${label}</dt><dd>${p[key] ? p[key] : PLACEHOLDER}</dd>`
+  );
+  rows.push(`<dt>Sources</dt><dd>${sourceList(p.sources)}</dd>`);
+  return rows.join('');
+}
+
+function entry(feature) {
+  const p = feature.properties;
+  const slug = slugFor(p);
+  const place = p.place ? ` at ${p.place}` : '';
+
+  const figure = p.image
+    ? `<figure class="production-figure">
+         <img src="${p.image}" alt="${p.title}">
+         ${p.image_credit ? `<figcaption>${p.image_credit}</figcaption>` : ''}
+       </figure>`
+    : '';
+
+  const link = p.link
+    ? `<p class="production-link"><a href="${p.link}" target="_blank" rel="noopener">Learn more about this place</a></p>`
+    : '';
+
+  return `
+    <section class="production-entry" id="${slug}" tabindex="-1">
+      <h4 class="production-title">${p.title}</h4>
+      <p class="production-filmed">Filmed in ${p.time}${place} for ${productionFor(p)}</p>
+      ${figure}
+      <p class="production-desc">${p.description}</p>
+      <dl class="production-fields">${fieldRows(p)}</dl>
+      ${link}
+    </section>`;
+}
+
+// One table row. The production and year cells are only written on the first
+// row of their span; the rowspan counts come from the grouping below.
+function tableRow(feature, spans) {
+  const p = feature.properties;
+  const [lng, lat] = feature.geometry.coordinates;
+  const cells = [];
+  if (spans.production) cells.push(`<td rowspan="${spans.production}" class="institution">${productionFor(p)}</td>`);
+  if (spans.year) cells.push(`<td rowspan="${spans.year}" class="year">${p.time}</td>`);
+  cells.push(`<td class="location">${p.place ? p.place : PLACEHOLDER}</td>`);
+  cells.push(`<td class="film-location"><a href="#${slugFor(p)}">${p.title}</a></td>`);
+  cells.push(`<td class="lat-long">${lat.toFixed(4)}, ${lng.toFixed(4)}</td>`);
+  return `<tr>${cells.join('')}</tr>`;
+}
+
+const res = await fetch('./data/locations.json');
+const data = await res.json();
+
+// Sort by year, then title, so the page reads in production order.
+const features = [...data.features].sort((a, b) =>
+  (Number(a.properties.time) - Number(b.properties.time)) ||
+  a.properties.title.localeCompare(b.properties.title)
+);
+
+// Group by production, then by year within each production.
+const groups = new Map();
+for (const feature of features) {
+  const production = productionFor(feature.properties);
+  if (!groups.has(production)) groups.set(production, new Map());
+  const years = groups.get(production);
+  const year = String(feature.properties.time);
+  if (!years.has(year)) years.set(year, []);
+  years.get(year).push(feature);
+}
+
+// Table
+const tableRows = [];
+for (const [, years] of groups) {
+  const productionCount = [...years.values()].reduce((n, list) => n + list.length, 0);
+  let firstInProduction = true;
+  for (const [, list] of years) {
+    list.forEach((feature, i) => {
+      tableRows.push(tableRow(feature, {
+        production: firstInProduction ? productionCount : 0,
+        year: i === 0 ? list.length : 0
+      }));
+      firstInProduction = false;
+    });
+  }
+}
+document.getElementById('production-table-body').innerHTML = tableRows.join('');
+
+// Sections and index
+const entries = document.getElementById('production-entries');
+const index = document.getElementById('production-index-list');
+
+entries.innerHTML = [...groups].map(([name, years]) => `
+  <div class="production-group">
+    <h3 class="production-group-title">${name}</h3>
+    ${[...years.values()].flat().map(entry).join('')}
+  </div>`).join('');
+
+index.innerHTML = [...groups].map(([name, years]) => `
+  <li>
+    <span class="production-index-group">${name}</span>
+    <ul>
+      ${[...years.values()].flat().map(f => `<li><a href="#${slugFor(f.properties)}">${f.properties.title}</a></li>`).join('')}
+    </ul>
+  </li>`).join('');
+
+// The sections are built after the page loads, so the browser's own jump to
+// #anchor has already happened. Do it again now that the target exists.
+if (location.hash) {
+  const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if (target) {
+    target.scrollIntoView({ block: 'start' });
+    target.focus({ preventScroll: true });
+  }
+}
+</script>
 </body>
 </html>
