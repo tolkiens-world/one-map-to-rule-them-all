@@ -799,3 +799,209 @@ dialog.drawer-end .drawer-panel .drawer-body {
 .leaflet-container .omtr-popup-frame a.leaflet-popup-close-button:focus {
   color: #f3eed9;
 }
+
+/* Production page */
+.production-header h1 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.75rem, 1.2rem + 2vw, 2.5rem);
+  font-weight: 700;
+  color: light-dark(#011e08, #cbbc2c);
+  margin: 0 0 1rem;
+}
+
+.production-header p {
+  max-width: 48rem;
+  margin: 0 0 0.75rem;
+}
+
+.production-back {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  color: light-dark(#023e10, #cbbc2c);
+  text-decoration: none;
+}
+
+.production-back:hover,
+.production-back:focus-visible {
+  text-decoration: underline;
+}
+
+.production-section-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: light-dark(#011e08, #cbbc2c);
+  margin: 2.5rem 0 1rem;
+}
+
+/* Table */
+.production-table-wrap {
+  overflow-x: auto;
+}
+
+.production-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.production-table th,
+.production-table td {
+  border: 1px solid light-dark(#ccc, rgba(203, 188, 44, 0.35));
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+.production-table thead th {
+  background: light-dark(#f2f2f2, rgba(203, 188, 44, 0.1));
+  text-align: left;
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+}
+
+.production-table td.institution,
+.production-table td.year {
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.production-table td:empty::after {
+  content: "\00a0";
+}
+
+.production-table a {
+  color: light-dark(#023e10, #cbbc2c);
+}
+
+/* Sections */
+.production-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .production-layout {
+    grid-template-columns: 14rem minmax(0, 1fr);
+  }
+
+  .production-index {
+    position: sticky;
+    top: 1rem;
+    align-self: start;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+  }
+}
+
+.production-index ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.production-index > ul > li + li {
+  margin-top: 1rem;
+}
+
+.production-index-group {
+  display: block;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: light-dark(#011e08, #cbbc2c);
+  margin-bottom: 0.25rem;
+}
+
+.production-index a {
+  display: block;
+  padding: 0.2rem 0 0.2rem 0.75rem;
+  border-left: 2px solid transparent;
+  color: inherit;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.production-index a:hover,
+.production-index a:focus-visible {
+  border-left-color: #cbbc2c;
+}
+
+.production-group + .production-group {
+  margin-top: 3rem;
+}
+
+.production-group-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: light-dark(#011e08, #cbbc2c);
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #cbbc2c;
+  margin: 0 0 1.25rem;
+}
+
+.production-entry {
+  padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+  border-left: 3px solid transparent;
+  scroll-margin-top: 1rem;
+}
+
+.production-entry + .production-entry {
+  margin-top: 0.5rem;
+  border-top: 1px solid light-dark(rgba(1, 30, 8, 0.15), rgba(203, 188, 44, 0.25));
+}
+
+.production-entry:target {
+  border-left-color: #cbbc2c;
+  background: light-dark(rgba(203, 188, 44, 0.08), rgba(203, 188, 44, 0.06));
+}
+
+.production-entry:focus {
+  outline: none;
+}
+
+.production-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: light-dark(#011e08, #cbbc2c);
+  margin: 0 0 0.25rem;
+}
+
+.production-filmed {
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  opacity: 0.8;
+  margin: 0 0 0.9rem;
+}
+
+.production-figure {
+  max-width: 28rem;
+  margin: 0 0 1rem;
+}
+
+.production-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(203, 188, 44, 0.5);
+  border-radius: 4px;
+}
+
+.production-figure figcaption {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin-top: 0.3rem;
+}
+
+.production-desc {
+  max-width: 42rem;
+  margin: 0 0 1rem;
+}
+
+.production-fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.35rem
