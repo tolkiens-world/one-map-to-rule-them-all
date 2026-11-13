@@ -49,7 +49,7 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="production.html">Production Data</a>
+              <a class="nav-link" href="production.html">Production Info</a>
             </li>
           </ul>
         </div>
@@ -63,7 +63,7 @@
     <h1 class="dialog-title">One Map to Rule Them All</h1>
     <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
   </div>
-  <div class="dialog-body" style="font-family: 'Cormorant Garamond', serif !important;">
+  <div class="dialog-body" style="font-family: 'Cinzel', serif;">
     <p>From the mountains of Wellington to the quiet streets of Manchester, Tolkien's world has taken shape across the globe.</p>
     <p>This interactive map traces production locations of Tolkien's works including: The Lord of the Rings, The Hobbit, Rings of Power, and Tolkien's Biopic. Close this window, then use the timeline slider to explore production and filming locations around the world.</p>
   </div>
@@ -73,15 +73,15 @@
 </dialog>
 
 <div class="map-wrap">
-    <div id="map" style="height: 900px"></div>
+  <div id="map" style="height: 900px"></div>
 
-   <div class="timeline" role="group" aria-label="Filter location by filming year">
-       <label for="timeline-range">Filmed through <span id="timeline-year"></span></label>
-       <input id="timeline-range" type="range" min="0" max="0" step="1" value="0">
-       <ul id="timeline-ticks" class="timeline-ticks" aria-hidden="true"></ul>
-   </div>
+  <div class="timeline" role="group" aria-label="Filter locations by filming year">
+    <label for="timeline-range">Filmed through <span id="timeline-year"></span></label>
+    <input id="timeline-range" type="range" min="0" max="0" step="1" value="0">
+    <ul id="timeline-ticks" class="timeline-ticks" aria-hidden="true"></ul>
+  </div>
 </div>
-    
+
 <!-- modal -->
 <script type="module">
 import * as bootstrap from 'https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js';
@@ -91,13 +91,13 @@ bootstrap.Dialog.getOrCreateInstance('#overlay').show();
 
 <!-- map -->
 <script type="module">
-import { Map as LeafletMap, TileLayer, Marker, GeoJSON, Icon, DomUtil, DomEvent } from 'leaflet';
+import { Map as LeafletMap, TileLayer, Marker, GeoJSON, Icon } from 'leaflet';
 
-const map = new LeafletMap('map').setView([-41.7526, 171.6037], 5.5);
+const map = new LeafletMap('map').setView([-41.292466, 174.778864], 6);
 
-new TileLayer('http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+new TileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
-  attribution: '&copy; <a href="https://www.arcgis.com/home/item.html?id=35e374c0c9d44ada8933a2ce5b2b350e">Esri, World Light Gray Base</a>'
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
 }).addTo(map);
 
 const res = await fetch('./data/locations.json');
@@ -109,9 +109,12 @@ const myIcon = new Icon({
   iconAnchor: [20, 40],
   popupAnchor: [0, -40]
 });
-    
+
+// ---- Popups ----
+
+// Same function as production.html, so popup links and section ids always match.
 function slugify(text) {
-    return text
+  return text
     .toLowerCase()
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
@@ -148,46 +151,50 @@ function popupContent(feature) {
       </footer>
     </article>`;
 }
+
 const locations = new GeoJSON(data, {
   pointToLayer: (feature, latlng) => new Marker(latlng, { icon: myIcon })
 })
+  .bindPopup(layer => popupContent(layer.feature), {
+    className: 'omtr-popup-frame',
+    minWidth: 260,
+    maxWidth: 320
+  })
+  .addTo(map);
 
-const range = document.getElementById('timeline-range'); 
-const yearLabel = document.getElementById('timeline-year')
+// ---- Timeline slider ----
+
+const years = [...new Set(data.features.map(f => Number(f.properties.time)))]
+  .sort((a, b) => a - b);
+
+const range = document.getElementById('timeline-range');
+const yearLabel = document.getElementById('timeline-year');
 const ticks = document.getElementById('timeline-ticks');
 
 range.max = years.length - 1;
-range.value = years.length -1;
+range.value = years.length - 1;
 
 ticks.innerHTML = years.map(y => `<li>${y}</li>`).join('');
 
 function showThrough(year) {
-    yearLabel.textContent = year;
-    range.setAttribute('aria-valuetext', `Filmed through ${year}`);
+  yearLabel.textContent = year;
+  range.setAttribute('aria-valuetext', `Filmed through ${year}`);
 
-    locations.eachLayer(layer => {
-        const filmed = Number(layer.feature.properties.time);
-        if (filmed <= year) {
-            if (!map.hasLayer(layer)) map.addLayer(layer);
-        } else if (map.hasLayer(layer)) {
-            layer.closePopup();
-            map.removeLayer(layer);
-        }
-    });
+  locations.eachLayer(layer => {
+    const filmed = Number(layer.feature.properties.time);
+    if (filmed <= year) {
+      if (!map.hasLayer(layer)) map.addLayer(layer);
+    } else if (map.hasLayer(layer)) {
+      layer.closePopup();
+      map.removeLayer(layer);
+    }
+  });
 }
 
 range.addEventListener('input', () => showThrough(years[Number(range.value)]));
 showThrough(years[Number(range.value)]);
-  .bindPopup(layer => popupContent(layer.feature), {
-      className: 'omtr-popup-frame',
-      minWidth: 260,
-      maxWidth: 320
-  })
-  .addTo(map);
-
-const years = [...new Set(data.features.map(f => Number(f.properties.time)))]
-    .sort((a, b) => a - b);
 </script>
+
 <footer class="site-footer bg-1 fg-2">
   <div class="container-fluid d-flex site-footer-inner">
     <p class="site-footer-copy">
