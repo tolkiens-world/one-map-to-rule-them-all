@@ -705,3 +705,97 @@ dialog.drawer-end .drawer-panel .drawer-body {
     text-align: center;
   }
 }
+/* Map popup */
+.omtr-popup-frame .leaflet-popup-content-wrapper,
+.omtr-popup-frame .leaflet-popup-tip {
+  background: #011e08;
+  color: #f3eed9;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+}
+
+.omtr-popup-frame .leaflet-popup-content-wrapper {
+  border: 1px solid #cbbc2c;
+  border-radius: 6px;
+}
+
+.omtr-popup-frame .leaflet-popup-content {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.omtr-popup-frame .omtr-popup {
+  padding: 1rem 1.25rem 0.9rem 1rem;
+}
+
+.omtr-popup-frame .omtr-popup-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #cbbc2c;
+  margin: 0 1.25rem 0 0;
+}
+
+.omtr-popup-frame .omtr-popup-meta {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: #cbbc2c;
+  opacity: 0.8;
+  margin: 0.2rem 0 0.6rem;
+}
+
+.omtr-popup-frame .omtr-popup-figure {
+  margin: 0 0 0.6rem;
+}
+
+.omtr-popup-frame .omtr-popup-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(203, 188, 44, 0.4);
+  border-radius: 4px;
+}
+
+.omtr-popup-frame .omtr-popup-figure figcaption {
+  font-size: 0.7rem;
+  opacity: 0.7;
+  margin-top: 0.25rem;
+}
+
+.omtr-popup-frame .omtr-popup-desc {
+  margin: 0 0 0.75rem;
+}
+
+.omtr-popup-frame .omtr-popup-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid rgba(203, 188, 44, 0.35);
+}
+
+.omtr-popup-frame .omtr-popup-footer a {
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #cbbc2c;
+  text-decoration: none;
+}
+
+.omtr-popup-frame .omtr-popup-footer a:hover,
+.omtr-popup-frame .omtr-popup-footer a:focus-visible {
+  text-decoration: underline;
+}
+
+.leaflet-container .omtr-popup-frame a.leaflet-popup-close-button {
+  color: #cbbc2c;
+  font-size: 18px;
+  top: 4px;
+  right: 4px;
+}
+
+.leaflet-container .omtr-popup-frame a.leaflet-popup-close-button:hover,
+.leaflet-container .omtr-popup-frame a.leaflet-popup-close-button:focus {
+  color: #f3eed9;
+}
