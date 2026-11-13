@@ -122,10 +122,16 @@ overlay.addEventListener('close', () => {
 <script type="module">
 import { Map as LeafletMap, TileLayer, Marker, GeoJSON, Icon } from 'leaflet';
 
-const map = new LeafletMap('map').setView([-41.7526, 171.6037], 5.5);
+// zoomSnap: 0.5 lets the map sit at half zoom levels, so the 5.5 below is honoured
+// instead of being rounded to 6.
+const map = new LeafletMap('map', { zoomSnap: 0.5 }).setView([-41.7526, 171.6037], 5.5);
 
+// Esri's World Light Gray Base only serves tiles to zoom 16. maxNativeZoom tells
+// Leaflet to stretch the level-16 tiles for zooms 17 to 19 instead of requesting
+// tiles that do not exist.
 new TileLayer('https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
   maxZoom: 19,
+  maxNativeZoom: 16,
   attribution: '&copy; <a href="https://www.arcgis.com/home/item.html?id=35e374c0c9d44ada8933a2ce5b2b350e">Esri, World Light Gray Base</a>'
 }).addTo(map);
 
@@ -227,7 +233,7 @@ showThrough(years[Number(range.value)]);
       &copy; <span id="year">2026</span> One Map to Rule Them All
     </p>
     <p class="site-footer-credit">
-      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>
+      Basemap &copy; <a href="https://www.arcgis.com/home/item.html?id=35e374c0c9d44ada8933a2ce5b2b350e">Esri, World Light Gray Base</a>
     </p>
   </div>
 </footer>
