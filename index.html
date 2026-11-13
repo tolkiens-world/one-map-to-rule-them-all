@@ -148,7 +148,7 @@ function popupContent(feature) {
       </footer>
     </article>`;
 }
-new GeoJSON(data, {
+const locations = new GeoJSON(data, {
   pointToLayer: (feature, latlng) => new Marker(latlng, { icon: myIcon })
 })
   .bindPopup(layer => popupContent(layer.feature), {
@@ -157,6 +157,9 @@ new GeoJSON(data, {
       maxWidth: 320
   })
   .addTo(map);
+
+const years = [...new Set(data.features.map(f => Number(f.properties.time)))]
+    .sort((a, b) => a - b);
 </script>
 <footer class="site-footer bg-1 fg-2">
   <div class="container-fluid d-flex site-footer-inner">
