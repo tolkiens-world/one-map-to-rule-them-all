@@ -12,7 +12,7 @@ This map plots all of the filming locations for the world of J.R.R. Tolkien enco
 | *Tolkien* | 2017 | England |
 | *The Rings of Power*, season 1 | 2020–2021 | New Zealand |
 | *The Rings of Power*, season 2 | 2022–2023 | England, Tenerife |
-| *The Rings of Power*, season 3 | 2024–2025 | England |
+| *The Rings of Power*, season 3 | 2024–2025 | England, Wales |
 
 ## How the map works
 
