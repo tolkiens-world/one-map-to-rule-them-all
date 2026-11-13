@@ -85,11 +85,11 @@ bootstrap.Dialog.getOrCreateInstance('#overlay').show();
 <script type="module">
 import { Map as LeafletMap, TileLayer, Marker, GeoJSON, Icon, DomUtil, DomEvent } from 'leaflet';
 
-const map = new LeafletMap('map').setView([-9.07, 79.0], 2.5);
+const map = new LeafletMap('map').setView([-41.294769, 174.771973], 6);
 
-new TileLayer('http://services.arcgisonline.com/arcgis/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+new TileLayer('http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
   maxZoom: 19,
-  attribution: '&copy; <a href="https://www.arcgis.com/home/item.html?id=35e374c0c9d44ada8933a2ce5b2b350e">Esri, National Geographic</a>'
+  attribution: '&copy; <a href="https://www.arcgis.com/home/item.html?id=35e374c0c9d44ada8933a2ce5b2b350e">Esri, World Light Gray Base</a>'
 }).addTo(map);
 
 const res = await fetch('./data/locations.json');
