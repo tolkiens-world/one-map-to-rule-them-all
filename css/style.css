@@ -1005,3 +1005,4 @@ dialog.drawer-end .drawer-panel .drawer-body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.35rem
+}
