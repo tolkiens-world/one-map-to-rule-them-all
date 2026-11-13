@@ -180,11 +180,14 @@ function popupContent(feature) {
 // Build the layer group and attach the popup to it (but don't add it to the map;
 // showThrough() adds/removes individual markers based on the slider)
 const locations = new GeoJSON(data, {
-  pointToLayer: (feature, latlng) => new Marker(latlng, { icon: myIcon })
-}).bindPopup(layer => popupContent(layer.feature), {
-  className: 'omtr-popup-frame',
-  minWidth: 260,
-  maxWidth: 320
+  pointToLayer: (feature, latlng) => new Marker(latlng, { icon: myIcon }),
+  onEachFeature: (feature, layer) => {
+    layer.bindPopup(() => popupContent(feature), {
+      className: 'omtr-popup-frame',
+      minWidth: 260,
+      maxWidth: 320
+    });
+  }
 });
 
 // Define years BEFORE using them
