@@ -101,12 +101,53 @@ const myIcon = new Icon({
   iconAnchor: [20, 40],
   popupAnchor: [0, -40]
 });
+    
+function slugify(text) {
+    return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
 
+function popupContent(feature) {
+  const p = feature.properties;
+  const slug = p.slug ?? slugify(p.title);
+
+  const meta = [p.production, `Filmed ${p.time}`].filter(Boolean).join(' · ');
+
+  const figure = p.image
+    ? `<figure class="omtr-popup-figure">
+         <img src="${p.image}" alt="${p.title}">
+         ${p.image_credit ? `<figcaption>${p.image_credit}</figcaption>` : ''}
+       </figure>`
+    : '';
+
+  const source = p.link
+    ? `<a href="${p.link}" target="_blank" rel="noopener">Learn more</a>`
+    : '';
+
+  return `
+    <article class="omtr-popup">
+      <h3 class="omtr-popup-title">${p.title}</h3>
+      <p class="omtr-popup-meta">${meta}</p>
+      ${figure}
+      <p class="omtr-popup-desc">${p.description}</p>
+      <footer class="omtr-popup-footer">
+        ${source}
+        <a href="production.html#${slug}">Production notes</a>
+      </footer>
+    </article>`;
+}
 new GeoJSON(data, {
-  pointToLayer: (feature, latlng) => new Marker(latlng, { icon: myIcon }),
-  style: feature => ({ color: feature.properties.color })
+  pointToLayer: (feature, latlng) => new Marker(latlng, { icon: myIcon })
 })
-  .bindPopup(layer => layer.feature.properties.description)
+  .bindPopup(layer => popupContent(layer.feature), {
+      className: 'omtr-popup-frame',
+      minWidth: 260,
+      maxWidth: 320
+  })
   .addTo(map);
 </script>
 <footer class="site-footer bg-1 fg-2">
