@@ -63,7 +63,7 @@
     <h1 class="dialog-title">One Map to Rule Them All</h1>
     <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
   </div>
-  <div class="dialog-body" style="font-family: 'Cinzel', serif;">
+  <div class="dialog-body" style="font-family: 'Cormorant Garamond', serif !important;">
     <p>From the mountains of Wellington to the quiet streets of Manchester, Tolkien's world has taken shape across the globe.</p>
     <p>This interactive map traces production locations of Tolkien's works including: The Lord of the Rings, The Hobbit, Rings of Power, and Tolkien's Biopic. Close this window, then use the timeline slider to explore production and filming locations around the world.</p>
   </div>
@@ -83,13 +83,13 @@ bootstrap.Dialog.getOrCreateInstance('#overlay').show();
 
 <!-- map -->
 <script type="module">
-import { Map as LeafletMap, TileLayer, Marker, GeoJSON, Icon } from 'leaflet';
+import { Map as LeafletMap, TileLayer, Marker, GeoJSON, Icon, DomUtil, DomEvent } from 'leaflet';
 
-const map = new LeafletMap('map').setView([-41.292466, 174.778864], 6);
+const map = new LeafletMap('map').setView([-41.7526, 171.6037], 5.5);
 
-new TileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+new TileLayer('http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
   maxZoom: 19,
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+  attribution: '&copy; <a href="https://www.arcgis.com/home/item.html?id=35e374c0c9d44ada8933a2ce5b2b350e">Esri, World Light Gray Base</a>'
 }).addTo(map);
 
 const res = await fetch('./data/locations.json');
