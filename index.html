@@ -73,9 +73,6 @@
 </dialog>
 <div class="dialog-audio">
   <audio id="modal-audio" src="assets/rohan.mp3" loop preload="auto"></audio>
-  <button type="button" id="audio-toggle" class="btn-outline" aria-pressed="false">
-    ♪ Play music
-  </button>
 </div>
 
 <div class="map-wrap">
@@ -94,34 +91,27 @@ import * as bootstrap from 'https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1
 
 const overlay = document.getElementById('overlay');
 const audio   = document.getElementById('modal-audio');
-const toggle  = document.getElementById('audio-toggle');
 
 bootstrap.Dialog.getOrCreateInstance(overlay).show();
 
-// Play / pause button (a click counts as the user gesture browsers require)
-toggle.addEventListener('click', async () => {
-  if (audio.paused) {
-    try {
-      await audio.play();
-    } catch (err) {
-      console.error('Audio could not play:', err);
-    }
-  } else {
-    audio.pause();
-  }
-});
+// Start the music with the modal. If the browser blocks autoplay,
+// start it on the first interaction instead.
+function startOnFirstInteraction() {
+  const start = () => {
+    if (overlay.open) audio.play().catch(() => {});
+    cleanup();
+  };
+  const cleanup = () => {
+    ['pointerdown', 'keydown', 'touchstart'].forEach(evt =>
+      document.removeEventListener(evt, start));
+  };
+  ['pointerdown', 'keydown', 'touchstart'].forEach(evt =>
+    document.addEventListener(evt, start, { once: true }));
+}
 
-// Keep the button label in sync with the audio state
-audio.addEventListener('play', () => {
-  toggle.textContent = '♪ Pause music';
-  toggle.setAttribute('aria-pressed', 'true');
-});
-audio.addEventListener('pause', () => {
-  toggle.textContent = '♪ Play music';
-  toggle.setAttribute('aria-pressed', 'false');
-});
+audio.play().catch(startOnFirstInteraction);
 
-// Stop and rewind when the modal closes (X button, Explore the Map, or Esc)
+// Stop and rewind when the modal closes
 overlay.addEventListener('close', () => {
   audio.pause();
   audio.currentTime = 0;
