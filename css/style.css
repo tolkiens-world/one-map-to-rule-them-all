@@ -694,6 +694,9 @@ dialog.drawer-end .drawer-panel .drawer-body {
 .h1 {
   font-family: 'Cinzel', serif;
 }
+.h2 {
+  font-family: 'Cinzel', serif;
+}
 
 /* Stack and center on small screens */
 @media (max-width: 640px) {
