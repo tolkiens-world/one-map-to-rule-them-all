@@ -22,6 +22,51 @@
   }}
 </script>
 <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+  .fellowship {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.member {
+  text-align: center;
+  padding: 1.5rem;
+  border: 1px solid rgba(184, 150, 62, 0.4);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.member-photo {
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #b8963e;
+  box-shadow: 0 0 14px rgba(184, 150, 62, 0.35);
+  margin-bottom: 1rem;
+}
+
+.member-name {
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
+}
+
+.member-role {
+  color: #b8963e;
+  font-style: italic;
+  margin-bottom: 0.8rem;
+}
+
+.member-bio {
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: left;
+}
+</style>
 </head>
 <body>
 <nav class="navbar md:navbar-expand bg-1 fg-2">
