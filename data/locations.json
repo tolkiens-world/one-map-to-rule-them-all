@@ -5,270 +5,429 @@
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [174.79076311840768, -41.295328823921686] },
       "properties": {
-        "title": "Hobbiton Woods", 
-        "description": "The Wooded Road sequence for the <i>Fellowship of the Ring</i> where the hibbits hide from mounted Ringwraiths. This took place in Mount Victoria New Zealand.",
-        "time": "1999", 
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-        }
+        "title": "Hobbiton Woods",
+        "place": "Mount Victoria Town Belt, Wellington, New Zealand",
+        "production": "Lord of the Rings",
+        "time": "1999",
+        "description": "The Wooded Road sequence from <i>The Fellowship of the Ring</i>, where the hobbits hide from a mounted Ringwraith, was filmed on Mount Victoria in Wellington. It was the first scene shot on the first day of principal photography.",
+        "filming_dates": "From 11 October 1999, the first day of a 274-day principal shoot. Time spent at this site is not documented.",
+        "scenes": "The hobbits on the wooded road out of the Shire, Frodo's 'Get off the road!', and the four hobbits hiding beneath a tree root as the Black Rider searches above them (<i>The Fellowship of the Ring</i>).",
+        "set_notes": "Natural forest with set dressing. Plants were added for filming, and the large root the hobbits hide under is reported to have been a built prop. The bank and path survive and are recognisable; no set remains.",
+        "production_notes": "Chosen because it offered mature forest minutes from the Wellington studios. Press photographers reportedly found the set on the first day and had to be moved back (tourism-site anecdote, unverified).",
+        "today": "Public reserve on Wellington's Town Belt with free walking tracks. Guided Lord of the Rings tours visit daily.",
+        "link": "https://en.wikipedia.org/wiki/Mount_Victoria,_Wellington",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Wellington_from_Mt_Victoria_(10).jpg?width=640",
+        "image_credit": "Kristina D.C. Hoeppner, via Wikimedia Commons, CC BY-SA 2.0",
+        "sources": [
+          { "label": "TheOneRing.net, Red Carpet Locations Tour Day Four (2005)", "url": "https://www.theonering.net/torwp/2005/07/13/24303-red-carpet-lotr-locations-tour-day-four-2/" },
+          { "label": "New Zealand Film Map, Hobbiton Woods: Outer Shire", "url": "https://newzealandfilmmap.com/locations/mount-victoria-outer-shire/" }
+        ]
       }
     },
     {
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [170.89367509416562, -43.54787539485398] },
       "properties": {
-        "title": "Erodas", 
-        "description": "Erodas took eleven months to build and was filmed for around three weeks in 1999. A construction team lived on site for the better part of a year, every piece of set including horsehair was removed to preserve the Mountain's pristine conditions.", 
-        "time": "1999", 
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-        }
+        "title": "Edoras",
+        "place": "Mount Sunday, Hakatere Conservation Park, Canterbury, New Zealand",
+        "production": "Lord of the Rings",
+        "time": "1999",
+        "description": "Edoras, capital of Rohan, was built on Mount Sunday in the upper Rangitata Valley. The set took nine to eleven months to build (sources differ), was filmed for about three weeks in 1999, and was removed entirely so the hill could be returned to its natural state.",
+        "filming_dates": "About three weeks in 1999, after a build of nine to eleven months.",
+        "scenes": "Exteriors of Edoras and Meduseld, the Golden Hall, in <i>The Two Towers</i> and <i>The Return of the King</i>, including the riders arriving and departing beneath the hill. Interiors were shot in Wellington studios.",
+        "set_notes": "A road up the hill, houses, stables, the Golden Hall on the summit and buildings at the foot; the rest of the town was digital. Everything was dismantled after filming and nothing remains.",
+        "production_notes": "Location scouts found the hill when a storm forced their aircraft off its planned route. Whether to keep the set for tourism was debated before it was removed. Tourism sources add that a construction crew lived on site for most of a year and that every trace, down to stray horsehair, was removed; those details are unverified.",
+        "today": "Public conservation land managed by the Department of Conservation, reached by Hakatere Potts Road. A short, steep walk leads to the summit. No set remains; day tours run from Christchurch.",
+        "link": "https://en.wikipedia.org/wiki/Mount_Sunday",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mt._Sunday_(Erewhon).jpg?width=640",
+        "image_credit": "Phillip Capper, via Wikimedia Commons, CC BY 2.0",
+        "sources": [
+          { "label": "Wikipedia, Mount Sunday", "url": "https://en.wikipedia.org/wiki/Mount_Sunday" },
+          { "label": "Tourism New Zealand, The Lord of the Rings filming locations", "url": "https://www.newzealand.com/us/feature/the-lord-of-the-rings-trilogy-filming-locations/" },
+          { "label": "Department of Conservation, Lord of the Rings locations", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/lord-of-the-rings-locations/" }
+        ]
       }
     },
     {
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [175.17999799513936, -41.06048123886671] },
       "properties": {
-        "title": "River Anduin", 
-        "description": "The production team combined several New Zealand waterways to create the River Anduin for the films. The Hutt River played a major role alongside the South Island rivers. The stretch of the Hutt River around Poet's Park was used for the scenes where the fellowship launches their elven boats.",
-        "time": "1999", 
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-        }
+        "title": "River Anduin",
+        "place": "Hutt River at Poet's Park, Upper Hutt, New Zealand",
+        "production": "Lord of the Rings",
+        "time": "1999",
+        "description": "The production combined several New Zealand rivers to create the Anduin. The stretch of the Hutt River around Poet's Park was used for the scene where the Fellowship launches its elven boats after leaving Lothlórien.",
+        "filming_dates": "Not documented. Filmed during the October 1999 to December 2000 principal shoot.",
+        "scenes": "The Fellowship paddling down the Anduin in <i>The Fellowship of the Ring</i>, launched from Poet's Park. Travel guides also place Aragorn washing ashore after the Warg attack (<i>The Two Towers</i>) on the Hutt River further upstream.",
+        "set_notes": "Landscape location only; no set was built.",
+        "production_notes": "Chosen partly for its proximity to the Wellington studios. Other rivers also played the Anduin: the Waiau for the opening aerial shots, the Mararoa and Mavora Lakes for leaving Lothlórien, and the Kawarau for the Argonath.",
+        "today": "Public riverside park with a walking and cycling trail between Moonshine Bridge and Poet's Park. No Lord of the Rings signage.",
+        "link": "https://en.wikipedia.org/wiki/Hutt_River",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hutt_River,_Kaitoke_Regional_Park,_Rivendell.jpg?width=640",
+        "image_credit": "Du Hugin Skulblaka, via Wikimedia Commons, CC BY-SA 4.0",
+        "sources": [
+          { "label": "NZ Pocket Guide, The Lord of the Rings in Wellington", "url": "https://nzpocketguide.com/guide-the-lord-of-the-rings-guide-in-wellington/" },
+          { "label": "Department of Conservation, Lord of the Rings locations", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/lord-of-the-rings-locations/" }
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [168.4698363786169, -44.6789718368819] },
+      "geometry": { "type": "Point", "coordinates": [168.34095, -44.67362] },
       "properties": {
-        "title": "Isengard", 
-        "description": "Isengard's exterior was filmed in the Dart Valley near Glenorchy in New Zealand. Mount Earnslaw served as the dramatic mountain backdrop. The tower itself was built as a 15-foot-tall miniature at a 1/35 scale. Earnslaw returned in The Hobbit as The Misty Mountains in <i> An Unexpected Journey</i>.", 
-        "time": "1999", 
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-        }
+        "title": "Isengard",
+        "place": "Dan's Paddock, Dart River valley, near Glenorchy, Otago, New Zealand",
+        "production": "Lord of the Rings",
+        "time": "1999",
+        "description": "Isengard's exterior was filmed in the Dart River valley near Glenorchy, with Mount Earnslaw as the backdrop. The tower of Orthanc was a Wētā Workshop miniature built at 1:35 scale and combined with the real valley and digital matte painting.",
+        "filming_dates": "Not documented.",
+        "scenes": "Gandalf riding into Nan Curunír toward Isengard in <i>The Fellowship of the Ring</i>. The valley supplied the background plates for the composite of Isengard and Orthanc.",
+        "set_notes": "Landscape and plate photography only. Orthanc was a resin miniature at 1:35 scale, finished to look like black obsidian; the ring of Isengard was completed with matte painting.",
+        "production_notes": "Not documented.",
+        "today": "Public conservation land near Mount Aspiring National Park, reached by the Glenorchy to Paradise road. Commercial Lord of the Rings tours run from Queenstown and Glenorchy.",
+        "link": "https://en.wikipedia.org/wiki/Mount_Earnslaw",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mt_Earnslaw_from_Bennetts_Bluff_lookout.jpg?width=640",
+        "image_credit": "Pseudopanax, via Wikimedia Commons, public domain",
+        "sources": [
+          { "label": "Department of Conservation, Lord of the Rings locations", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/lord-of-the-rings-locations/" },
+          { "label": "Wikipedia, Alan Lee (illustrator)", "url": "https://en.wikipedia.org/wiki/Alan_Lee_(illustrator)" }
+        ]
       }
     },
     {
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [175.68723640536055, -37.871695508606486] },
       "properties": {
-        "title": "The Shire", 
-        "description": "Peter Jackson's location scouts found the location for Hobbiton in September 1998 while flying over Waikato looking for a place to film the Shire. The Hobbiton set was carved into a hillside under a New Zealand Army earthworks operation that took nine months. The rebuilt of the Hobbiton set after The Hobbit trilogy was kept as a permanent fixture of the landscape and is the only LOTR set that exists to date.", 
-        "time": "2000", 
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-        }
+        "title": "The Shire",
+        "place": "Hobbiton Movie Set, Matamata, Waikato, New Zealand",
+        "production": "Lord of the Rings",
+        "time": "1999",
+        "description": "Location scouts spotted the Alexander family farm from the air in September 1998 while searching the Waikato for the Shire. The New Zealand Army built the access road and began site works in March 1999, the set took about nine months to build, and filming began in December 1999. Rebuilt in permanent materials for <i>The Hobbit</i>, it is the only set from either trilogy still standing.",
+        "filming_dates": "About three months from December 1999, after a nine-month build. Rebuilt and filmed again for <i>The Hobbit</i> from 2011.",
+        "scenes": "Bag End, Bilbo's farewell party, Gandalf's arrival in Hobbiton and the Green Dragon in <i>The Fellowship of the Ring</i>; the Shire scenes of <i>The Return of the King</i> and <i>An Unexpected Journey</i>.",
+        "set_notes": "39 temporary hobbit holes on a 12-acre site, with an oak tree moved and reassembled above Bag End. After partial demolition, 17 plywood facades remained. The permanent rebuild for <i>The Hobbit</i> (dated 2009 or 2010 depending on the source) still stands.",
+        "production_notes": "Hobbiton's own history says the scouts knocked on the farmhouse door during a test rugby match and were told to come back later. Strict secrecy applied through construction and filming. The owners, originally promised the land would be restored, negotiated to keep the remaining facades for tours.",
+        "today": "A working sheep farm and the permanent Hobbiton Movie Set, run by Rings Scenic Tours. Access is by paid guided tour only; the Green Dragon Inn operates on site.",
+        "link": "https://www.hobbitontours.com/",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hobbiton_Movie_Set,_Matamata,_New_Zealand_2016_(50796595363).jpg?width=640",
+        "image_credit": "Joe Ross, via Wikimedia Commons, CC BY-SA 2.0",
+        "sources": [
+          { "label": "Hobbiton Movie Set, Function Information 2025-2027", "url": "https://www.hobbitontours.com/media/ksypk3kv/final-function-manual-2025-2027.pdf" },
+          { "label": "Great Sights, The Story of Hobbiton", "url": "https://www.greatsights.co.nz/story-of-hobbiton/" },
+          { "label": "Wikipedia, Hobbiton Movie Set", "url": "https://en.wikipedia.org/wiki/Hobbiton_Movie_Set" }
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [175.51483022857957, -39.1731353485876] },
+      "geometry": { "type": "Point", "coordinates": [175.50263, -39.31935] },
       "properties": {
-        "title": "The Forbidden Pool", 
-        "description": "Andy Serkis didn't join the cast until 2000, which meant that the scenes involving Gollum were filmed later in the production schedule. The fish-catching scene where Faramir's rangers capture Gollum was shot on the Mangawhero River on the southern flank of Mount Ruapehu. Serkis wore a thick wetsuit under his costume and spent long periods in near-freezing water.",
-        "time": "2000", 
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-        }
+        "title": "The Forbidden Pool",
+        "place": "Mangawhero River above Mangawhero Falls, Tongariro National Park, New Zealand",
+        "production": "Lord of the Rings",
+        "time": "2000",
+        "description": "The scene in <i>The Two Towers</i> where Faramir's rangers watch Gollum catch a fish in the Forbidden Pool was shot on the Mangawhero River on the southern side of Mount Ruapehu. Nearby Tawhai Falls is a look-alike signposted as 'Gollum's Pool', but the Department of Conservation places the filming here.",
+        "filming_dates": "Not documented.",
+        "scenes": "Gollum fishing in the Forbidden Pool while Faramir's archers wait for Frodo's word (<i>The Two Towers</i>). A clearing nearby was used for Frodo and Sam passing a ruined column on the borders of Ithilien.",
+        "set_notes": "Landscape location; no permanent set.",
+        "production_notes": "Tourism sources say the local fire brigade hosed away snow before filming and that Andy Serkis wore a thick wetsuit under his costume in the cold water; both are unverified. The site lies within Tongariro National Park, managed by the Department of Conservation.",
+        "today": "Public national park land. A short, easy walk leads from Ohakune Mountain Road to the falls. The 'Gollum's Pool' sign is at Tawhai Falls, not here.",
+        "link": "https://en.wikipedia.org/wiki/Mangawhero_River",
+        "image": "",
+        "image_credit": "",
+        "sources": [
+          { "label": "Department of Conservation, Lord of the Rings locations", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/lord-of-the-rings-locations/" },
+          { "label": "Wikipedia, Mangawhero River", "url": "https://en.wikipedia.org/wiki/Mangawhero_River" }
+        ]
       }
     },
     {
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [175.19828435142864, -41.06737054949341] },
       "properties": {
-        "title": "Rivendell", 
-        "description": "Rivendell was filmed in the Kaitoke Regional Park in New Zealand. The location provided the lush, forested setting for the home of Elrond and the site of the Council of Elrond. The park has a signposted Rivendell display near the filming site for visitors to enjoy.",
-        "time": "2000", 
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-        }
+        "title": "Rivendell",
+        "place": "Kaitoke Regional Park, Upper Hutt, New Zealand",
+        "production": "Lord of the Rings",
+        "time": "2000",
+        "description": "Exterior scenes of Rivendell were filmed in the forest of Kaitoke Regional Park, which also stood in for the Fords of Isen. The park now has a signposted Rivendell walk with a replica elven archway near the filming site.",
+        "filming_dates": "Not documented.",
+        "scenes": "Exterior shots of Rivendell in <i>The Fellowship of the Ring</i>, including the area where the Fellowship sets out, and the Fords of Isen.",
+        "set_notes": "A temporary exterior set in a forest clearing. Plants were reportedly moved during filming and replanted afterward. Nothing original remains; the archway is a later replica.",
+        "production_notes": "Not documented beyond the replanting.",
+        "today": "A 2,860-hectare regional park run by Greater Wellington Regional Council, free to enter, with camping and swimming. A 15-minute walk leads to the elven archway and interpretive signs; the site is popular for weddings.",
+        "link": "https://www.gw.govt.nz/parks/kaitoke-regional-park/",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hutt_River,_Kaitoke_Regional_Park,_Rivendell.jpg?width=640",
+        "image_credit": "Du Hugin Skulblaka, via Wikimedia Commons, CC BY-SA 4.0",
+        "sources": [
+          { "label": "Greater Wellington, Kaitoke Regional Park", "url": "https://www.gw.govt.nz/parks/kaitoke-regional-park/" },
+          { "label": "Wikipedia, Kaitoke Regional Park", "url": "https://en.wikipedia.org/wiki/Kaitoke_Regional_Park" },
+          { "label": "Tourism New Zealand, Kaitoke Regional Park", "url": "https://www.newzealand.com/us/feature/kaitoke-regional-park/" }
+        ]
       }
     },
     {
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [170.17286974165245, -43.58952823468205] },
       "properties": {
-        "title": "Minas Tirith", 
-        "description": "Mount Cook (Aoraki) in New Zealand served as the backdrop for Minas Tirith in the films. The majestic mountain provided the dramatic setting for the city of Gondor. The White City itself shared a set with Helm's Deeo.",
+        "title": "Minas Tirith",
+        "place": "Aoraki/Mount Cook National Park, Canterbury, New Zealand",
+        "production": "Lord of the Rings",
         "time": "2000",
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-        }
+        "description": "Aoraki/Mount Cook supplied the mountain backdrop behind Minas Tirith in <i>The Return of the King</i>. The city itself was never built here: the full-size set stood at Dry Creek Quarry near Wellington, on the site of the Helm's Deep set, and the wide shots used a large miniature.",
+        "filming_dates": "Not documented.",
+        "scenes": "Background mountain plates for Minas Tirith, notably Gandalf and Pippin's arrival on Shadowfax. Nearby Ben Ohau Station at Twizel provided the Pelennor Fields.",
+        "set_notes": "Landscape and plate photography only; nothing was built here. The physical set at Dry Creek Quarry was dismantled and the quarry is still working.",
+        "production_notes": "ChristchurchNZ notes that the rocks to the right of Minas Tirith on screen were shot from just below the Hermitage Hotel. The lighting of the beacons was filmed at Mount Gunn near Franz Josef, not at Mount Cook.",
+        "today": "Public national park within the Te Wāhipounamu World Heritage Area, with free walking tracks from Mount Cook Village.",
+        "link": "https://en.wikipedia.org/wiki/Aoraki_/_Mount_Cook",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Aoraki_-_Mt_Cook,_Aoraki_-_Mount_Cook_National_Park,_New_Zealand.jpg?width=640",
+        "image_credit": "Michal Klajban (Podzemnik), via Wikimedia Commons, CC BY-SA 4.0",
+        "sources": [
+          { "label": "ChristchurchNZ, Minas Tirith", "url": "https://www.christchurchnz.com/visit/things-to-do/get-inspired/minas-tirith" },
+          { "label": "Department of Conservation, Lord of the Rings locations", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/lord-of-the-rings-locations/" },
+          { "label": "Hi Atlas, Wellington Lord of the Rings filming locations", "url": "https://hiatlas.com/blog/wellington-lord-of-the-rings-filming-locations" }
+        ]
       }
     },
-      {
+    {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [167.94006541205712, -45.34556202562199] },
+      "geometry": { "type": "Point", "coordinates": [167.90795, -45.35145] },
       "properties": {
-        "title": "Fangorn Forest", 
-        "description": "The interior of Fangorn Forest was filmed in Snowdon Forest near Te Anau off Takaro Road in New Zealand. The dense, ancient trees and moss-covered landscape provided the perfect setting for the scenes involving the Ents and the mysterious forest. The filming location was later repurposed for the Mirkwood in The Hobbit trilogy.",
+        "title": "Fangorn Forest",
+        "place": "Snowdon Forest Conservation Area, Takaro Road, near Te Anau, New Zealand",
+        "production": "Lord of the Rings",
         "time": "2000",
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-        }
+        "description": "The interior of Fangorn Forest was filmed in Snowdon Forest off Takaro Road, near Te Anau. The dense beech forest and moss-covered floor provided the setting for the scenes involving the Ents and the search for Merry and Pippin.",
+        "filming_dates": "Not documented.",
+        "scenes": "Aragorn, Legolas and Gimli tracking the hobbits into the forest and meeting Gandalf the White (<i>The Two Towers</i>). The forest edge with the burnt orc pile was filmed separately at Mavora Lakes.",
+        "set_notes": "Natural beech forest with no permanent set. Both sides of Takaro Road were filmed, with remote cameras slung from high wires to film movement through the trees.",
+        "production_notes": "A remote site reached by gravel roads off State Highway 94. Other logistics are not documented.",
+        "today": "Public conservation land managed by the Department of Conservation, free to visit via Kakapo and Takaro roads. There is no signage; check road conditions with DOC Te Anau.",
+        "link": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/southland/places/snowdon-forest-conservation-area/",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kepler_Track,_New_Zealand_(80).JPG?width=640",
+        "image_credit": "Michal Klajban (Podzemnik), via Wikimedia Commons, CC BY-SA 4.0",
+        "sources": [
+          { "label": "Department of Conservation, Lord of the Rings locations", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/lord-of-the-rings-locations/" },
+          { "label": "Tourism New Zealand, The Lord of the Rings filming locations", "url": "https://www.newzealand.com/us/feature/the-lord-of-the-rings-trilogy-filming-locations/" }
+        ]
       }
     },
-      {
+    {
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [175.63566760409176, -39.15629747820435] },
       "properties": {
-        "title": "Mount Doom", 
-        "description": "Production got larger in 2000, with the addition of new sets and locations to accommodate the expanding scope of the films. Wood and Astin started shooting scenes at Mount Ruapehu for Mount Doom. The mountain itself was never directed filmed on out of respect for the Tapu.",
-        "time": "2000", 
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-        }
+        "title": "Mount Doom",
+        "place": "Mount Ngauruhoe, Tongariro National Park, New Zealand",
+        "production": "Lord of the Rings",
+        "time": "2000",
+        "description": "Mount Ngauruhoe is the visual model for Mount Doom throughout the trilogy. Filming on its summit was not permitted because the mountain is sacred to Ngāti Tūwharetoa, so the cone appears in wide shots combined with models and digital effects. Frodo and Sam's climb is widely reported to have been shot on the slopes of neighbouring Mount Ruapehu.",
+        "filming_dates": "Not documented.",
+        "scenes": "Ngauruhoe's silhouette stands in for Mount Doom in long shots. On nearby Ruapehu, the Whakapapa skifield was used for the prologue where Isildur cuts the Ring from Sauron's hand, Meads Wall for Emyn Muil, and the Tukino skifield for the lookout over the Black Gate.",
+        "set_notes": "No set on Ngauruhoe; the volcano was combined with miniatures and CGI, and the Crack of Doom interior was a studio set.",
+        "production_notes": "The summit restriction reflects the mountain's tapu status. In 2017 the Department of Conservation asked visitors not to climb the park's summits and asked tour operators to stop calling Ngauruhoe 'Mt Doom'. The consultation terms for the original shoot are not documented.",
+        "today": "A dual UNESCO World Heritage national park. Ngauruhoe is visible from the Tongariro Alpine Crossing and the Desert Road; visitors are asked not to summit it. Meads Wall is a short walk at Whakapapa.",
+        "link": "https://en.wikipedia.org/wiki/Mount_Ngauruhoe",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Ngauruhoe_Landscape_(5153249055).jpg?width=640",
+        "image_credit": "Jeffrey Pang, via Wikimedia Commons, CC BY 2.0",
+        "sources": [
+          { "label": "Wikipedia, Mordor (film section)", "url": "https://en.wikipedia.org/wiki/Mordor" },
+          { "label": "Tolkien Gateway, Mount Doom", "url": "https://tolkiengateway.net/wiki/Mount_Doom" },
+          { "label": "Department of Conservation, Lord of the Rings locations", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/lord-of-the-rings-locations/" }
+        ]
       }
     },
-      {
+    {
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-2.3758522169894, 53.30522496005973] },
       "properties": {
-        "title": "Battle of the Somme", 
-        "description": "The war and trench scenes depicting the Battle of the Somme were filmed in the Tatton Estate in Greater Manchester, England. Production spent months constructing elaborate sets and trenches to recreate the conditions of the battlefield.",
-        "time": "2017", 
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-        }
+        "title": "Battle of the Somme",
+        "place": "Tatton Studios, Tatton Estate, Cheshire, England",
+        "production": "Tolkien Biopic",
+        "time": "2017",
+        "description": "The trench and battlefield scenes depicting the Battle of the Somme were filmed on the Tatton Estate in Cheshire, where a construction crew spent three months building a 15-acre recreation of the First World War front.",
+        "filming_dates": "Autumn 2017, after a three-month trench build. Exact dates are not documented.",
+        "scenes": "The Somme battlefield and trench sequences, including night shooting, plus green-screen interiors in Tatton's studio.",
+        "set_notes": "A trench and battlefield set on the Showground Four backlot, the largest set Tatton had hosted. Ashley Hall served as the production office and the North Range as the costume base. The set was temporary.",
+        "production_notes": "150 soldier extras, 30 cavalry horses and a crew of about 300, with a dedicated special-effects team. The Tolkien Estate publicly disavowed the film.",
+        "today": "Tatton Studios is a private commercial backlot and not open to visitors. Neighbouring Tatton Park, a National Trust estate run by Cheshire East Council, is open to the public.",
+        "link": "https://en.wikipedia.org/wiki/Tatton_Park",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Melchett_Mere,_Tatton_Park_-_geograph.org.uk_-_7716015.jpg?width=640",
+        "image_credit": "Eirian Evans, via Wikimedia Commons, CC BY-SA 2.0",
+        "sources": [
+          { "label": "Prolific North, Tatton Studios plays starring role in new Tolkien film (2019)", "url": "https://www.prolificnorth.co.uk/news/broadcasting/2019/02/tatton-studios-plays-starring-role-new-tolkien-film" },
+          { "label": "Tatton Locations, Where was the Tolkien biopic filmed?", "url": "https://www.tattonlocations.co.uk/tolkien-filming-location-where-was-the-tolkien-biopic-filmed/" },
+          { "label": "Wikipedia, Ashley Hall, Cheshire", "url": "https://en.wikipedia.org/wiki/Ashley_Hall,_Cheshire" }
+        ]
       }
     },
-      {
+    {
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-2.2424256997843726, 53.48643483229861] },
       "properties": {
-        "title": "Oxford University Library", 
-        "description": "Despite being educated at Oxford University, the library scenes for the Tolkien biopic were actually filmed in several different locations. One of the primary filming locations for the educational content was Chetham's Library in Manchester.", 
-        "time": "2017", 
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-        }
+        "title": "Oxford University Library",
+        "place": "Chetham's Library, Manchester, England",
+        "production": "Tolkien Biopic",
+        "time": "2017",
+        "description": "The biopic's library scenes were not filmed in Oxford. Chetham's Library in Manchester, the oldest free public reference library in the English-speaking world, is listed among the film's locations and is generally taken to have stood in for Oxford's libraries, though the specific scenes are not documented.",
+        "filming_dates": "Not documented.",
+        "scenes": "Not documented. The John Rylands Library in Manchester is also listed among the film's locations.",
+        "set_notes": "An existing historic interior used as found; no build is documented.",
+        "production_notes": "Not documented.",
+        "today": "A working historic library founded in 1653, open to visitors by guided tour.",
+        "link": "https://library.chethams.com/",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chethams_Library_Reading_Room.jpg?width=640",
+        "image_credit": "Michael D Beckwith, via Wikimedia Commons, CC BY 3.0",
+        "sources": [
+          { "label": "IMDb, Tolkien (2019) filming locations", "url": "https://www.imdb.com/title/tt3361792/locations/" },
+          { "label": "Tatton Locations, Where was the Tolkien biopic filmed?", "url": "https://www.tattonlocations.co.uk/tolkien-filming-location-where-was-the-tolkien-biopic-filmed/" }
+        ]
       }
     },
-      {
+    {
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-3.045671426024209, 53.32080246089381] },
       "properties": {
-        "title": "Sarehole", 
-        "description": "Thorton Hough village green was used as a filming location for scenes in the Tolkien biopic, providing a picturesque and historic setting for the production. ",
+        "title": "Sarehole",
+        "place": "Thornton Hough village green, Wirral, England",
+        "production": "Tolkien Biopic",
         "time": "2017",
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-        }
+        "description": "Thornton Hough village green on the Wirral was used as a location for the biopic, with cast and crew filming there a week after the Ellesmere Port docklands shoot. Which scenes it provided is not documented; it is generally assumed to represent Sarehole, Tolkien's childhood village.",
+        "filming_dates": "Not documented.",
+        "scenes": "Not documented.",
+        "set_notes": "An existing Victorian village green, presumably with period dressing; no build is documented.",
+        "production_notes": "Not documented.",
+        "today": "A public village green in a Victorian model village, free to visit.",
+        "link": "https://en.wikipedia.org/wiki/Thornton_Hough",
+        "image": "",
+        "image_credit": "",
+        "sources": [
+          { "label": "Chester Standard, Thornton Hough village green used for Tolkien biopic", "url": "https://www.chesterstandard.co.uk/news/15964992.thornton-hough-village-green-used-as-a-location-for-filming-of-tolkien-biopic/" }
+        ]
       }
     },
-      {
+    {
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-16.61727042243518, 28.254133841460938] },
       "properties": {
-        "title": "Eastern lands of Rhûn", 
-        "description": "Tenerife was a primary shooting location for the Eastern lands of Rhûn scenes in the Rings of Power Season 2. Teide National Park and Mount Teide were used for the dramatic Mars-like deserts and journeys where the Stranger and his Harfoot companions travelled to meet Tom Bombadil.",
-        "time": "2022", 
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-        }
+        "title": "Eastern lands of Rhûn",
+        "place": "Teide National Park, Tenerife, Spain",
+        "production": "Rings of Power",
+        "season": "2",
+        "time": "2023",
+        "description": "Tenerife was the main location for Rhûn in season 2 of <i>The Rings of Power</i>. Teide National Park and its volcanic desert stood in for the eastern lands crossed by the Stranger on his way to Tom Bombadil, and by Nori and Poppy in their search for the Stoors.",
+        "filming_dates": "From early March 2023 around Teide National Park, before the unit moved to San Juan de la Rambla; about five weeks on Tenerife in total.",
+        "scenes": "The Stranger and Nori lost in the desert, the Dark Wizard's riders and the sandstorm (season 2, episodes 1 and 2). Other Rhûn scenes were shot at Los Derriscaderos and the San Blas reserve.",
+        "set_notes": "Landscape location with temporary dressing; no permanent build.",
+        "production_notes": "Chosen for a hot, sandy landscape and the Canary Islands' film tax rebate. It was one of up to four units shooting at once. Park permits are not documented.",
+        "today": "Public national park and UNESCO World Heritage Site, free to enter, with viewpoints, trails and a cable car.",
+        "link": "https://en.wikipedia.org/wiki/Teide_National_Park",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mirador_de_Las_Narices_observation_deck_in_Teide_National_Park_on_Tenerife,_Spain_(48225440127).jpg?width=640",
+        "image_credit": "dronepicr, via Wikimedia Commons, CC BY 2.0",
+        "sources": [
+          { "label": "Screen Daily, Rings of Power showrunners on the move to the UK (2024)", "url": "https://www.screendaily.com/features/prime-videos-the-rings-of-power-showrunners-reveal-how-the-move-from-new-zealand-to-uk-impacted-season-two/5197384.article" },
+          { "label": "Tenerife Film Commission, The Rings of Power S2", "url": "https://www.webtenerife.co.uk/tenerifefilm/how-shoot/productions-on-tenerife/2023/anillos/" },
+          { "label": "Wikipedia, The Rings of Power season 2", "url": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Rings_of_Power_season_2" }
+        ]
       }
     },
-      {
+    {
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-3.8231372983400926, 51.66110616662456] },
       "properties": {
-        "title": "Numenor", 
-        "description": "Founded in 1130, Neath Abbey in Wales was the only existing historic building used for filming production in season 3 of the Rings of Power. Neath Abbey was used as the setting for the ruins of Numenor.",
-        "time": "2023", 
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-        }
+        "title": "Númenor",
+        "place": "Neath Abbey, Neath, Wales",
+        "production": "Rings of Power",
+        "season": "3",
+        "time": "2025",
+        "description": "Neath Abbey, a Cistercian ruin founded in 1130, was the only existing historic building used in season 3 of <i>The Rings of Power</i>. It played Míriel's hideaway, a refuge of the Faithful in Númenor.",
+        "filming_dates": "2025, during the May to October season 3 shoot. Exact dates are not documented.",
+        "scenes": "Míriel's hideaway, reportedly in episode 2 of season 3.",
+        "set_notes": "An existing scheduled ruin dressed for the shoot; no lasting changes are documented.",
+        "production_notes": "Filming was arranged through Cadw, the Welsh Government's historic environment service, which markets the abbey as a location.",
+        "today": "A Cadw monument, free and open daily.",
+        "link": "https://cadw.gov.wales/visit/places-to-visit/neath-abbey",
+        "image": "",
+        "image_credit": "",
+        "sources": [
+          { "label": "Los Angeles Times via Yahoo, How Rings of Power created season 3's battles (2026)", "url": "https://www.yahoo.com/entertainment/tv/articles/dozens-orcs-wild-men-12-110000997.html" },
+          { "label": "BuzzFeed, Rings of Power cast share season 3 memories (2026)", "url": "https://www.buzzfeed.com/andrewfirriolo/rings-of-power-season-3-cast-interview" },
+          { "label": "Cadw, Filming Locations brochure 2025", "url": "https://cadw.gov.wales/sites/default/files/2024-12/Cadw%20Filming%20Locations%20Brochure%202025v1.pdf" }
+        ]
       }
     },
-       {
+    {
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-0.6172488226549504, 51.42422341122429] },
       "properties": {
-        "title": "Battle of the Gwathló", 
-        "description": "Great Windsor Park provided the backdrop for the Battle of the Gwathló scenes in the Rings of Power series. The park has previously been used to film for Harry Potter and the Deathly Hallows and World War Z. Unsurprisingly, it was chosen for its expansive and dramatic landscape.",
-        "time": "2025", 
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-          }
-        }
-      },
-            {
+        "title": "Eregion and Adar's Camp",
+        "place": "Windsor Great Park, Berkshire, England",
+        "production": "Rings of Power",
+        "season": "2",
+        "time": "2023",
+        "description": "Windsor Great Park provided season 2 exteriors for the Siege of Eregion, Adar's encampment at Buttersteep Rise and the Ent encounter, and was used again in season 3. The park has also appeared in <i>Harry Potter and the Deathly Hallows</i> and <i>The Huntsman: Winter's War</i>.",
+        "filming_dates": "During the October 2022 to June 2023 season 2 shoot, and again in summer 2025 for season 3. Exact dates are not documented.",
+        "scenes": "Season 2: the Siege of Eregion exteriors, Adar's camp and the Ent encounter. Season 3: not specified. The season 3 opening battle, inspired by the Battle of the Gwathló, was filmed at Tilsey Farm in Surrey rather than here.",
+        "set_notes": "Temporary location builds on Crown Estate land; specifics are not documented. An art director recalled the showrunners hugging the park's 900-year-old trees.",
+        "production_notes": "The production took over a large section of the park while other units shot at Frensham and Shepperton. Agreements with the Crown Estate are not documented.",
+        "today": "A royal park managed by the Crown Estate, open free to the public, including the Long Walk and Virginia Water.",
+        "link": "https://www.windsorgreatpark.co.uk/the-estate/",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Windsor_Castle_and_The_Long_Walk.jpg?width=640",
+        "image_credit": "Michael Coppins, via Wikimedia Commons, CC BY-SA 4.0",
+        "sources": [
+          { "label": "The Escapist, Where Was The Rings of Power Season 2 Filmed?", "url": "https://www.escapistmagazine.com/where-was-the-rings-of-power-season-2-filmed/" },
+          { "label": "Nerdist, 7 details from the season 2 set", "url": "https://nerdist.com/article/the-rings-of-power-season-2-set-visit/" },
+          { "label": "Los Angeles Times via Yahoo, How Rings of Power created season 3's battles (2026)", "url": "https://www.yahoo.com/entertainment/tv/articles/dozens-orcs-wild-men-12-110000997.html" }
+        ]
+      }
+    },
+    {
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-3.2766, 51.8099] },
       "properties": {
         "title": "Khazad-dûm",
-        "description": "Trefil Quarry in Wales was used as a filming location for the Khazad-dûm scenes in the Rings of Power series. It's an 18th century limestone quarry with dramatic rock formations and deep caverns, providing a fitting backdrop for the underground realm of the dwarves.",
-        "time": "2025", 
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-        }
+        "place": "Trefil Quarry, near Tredegar, Wales",
+        "production": "Rings of Power",
+        "season": "3",
+        "time": "2025",
+        "description": "Cast and crew of <i>The Rings of Power</i> were reported at Trefil Quarry in August 2025 during the season 3 shoot. Which scenes were filmed here has not been confirmed; the quarry is often linked to Khazad-dûm, but the dwarven city's sets were built at Shepperton Studios.",
+        "filming_dates": "August 2025, according to a single secondary report.",
+        "scenes": "Not documented.",
+        "set_notes": "Not documented.",
+        "production_notes": "A frequently used screen quarry whose earlier productions include <i>Doctor Who</i>, <i>Merlin</i>, <i>Wrath of the Titans</i> and <i>The Hitchhiker's Guide to the Galaxy</i>.",
+        "today": "A disused quarry on private land at the edge of Bannau Brycheiniog (Brecon Beacons). A public right of way crosses it.",
+        "link": "https://en.wikipedia.org/wiki/Trefil",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Trefil_Quarry_-_geograph.org.uk_-_760475.jpg?width=640",
+        "image_credit": "Alan Bowring, via Wikimedia Commons, CC BY-SA 2.0",
+        "sources": [
+          { "label": "Moviedelic, Where Was The Rings of Power Season 3 Filmed? (2026)", "url": "https://moviedelic.com/where-the-lord-of-the-rings-the-rings-of-power-season-3-filmed/" },
+          { "label": "Los Angeles Times via Yahoo, How Rings of Power created season 3's battles (2026)", "url": "https://www.yahoo.com/entertainment/tv/articles/dozens-orcs-wild-men-12-110000997.html" },
+          { "label": "Doctor Who Locations, Trefil Quarry", "url": "https://www.doctorwholocations.net/locations/trefilquarry" }
+        ]
       }
     },
-             {
+    {
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [7.919727655346315, 46.59365382607691] },
       "properties": {
-        "title": "Rivendell 2.0", 
-        "description": "Production designer Kristian Milsted and the visual effects team recreated Rivendell from J. R. R. Tolkien's original vacation spot in Lauterbrunnen Valley, Switzerland for the Rings of Power series. They used a VFX from helicopter to scan and map the valley to virtually recreate the scenery in a living set in the UK.", 
-        "time": "2025", 
-        "icon": {
-          "iconUrl": "assets/icons8-ring-40.png", 
-          "iconSize": [40, 40],
-          "iconAnchor": [20, 40],
-          "popupAnchor": [0, -40]
-        }
+        "title": "Rivendell 2.0",
+        "place": "Lauterbrunnen Valley, Bernese Oberland, Switzerland",
+        "production": "Rings of Power",
+        "season": "3",
+        "time": "2025",
+        "description": "For season 3, production designer Kristian Milsted and the visual effects team flew a helicopter over the Lauterbrunnen Valley, the Swiss landscape Tolkien walked through in 1911, and scanned it in full. The physical Rivendell set was then built on a stage at Shepperton Studios inside a digital reconstruction of the valley.",
+        "filming_dates": "Not documented. The helicopter scan and aerial photography were part of the 2025 season 3 production.",
+        "scenes": "The valley vistas seen from Rivendell, with camera moves on the set matched to the helicopter footage. No actors filmed in Switzerland.",
+        "set_notes": "Nothing was built in Switzerland. The Shepperton set included Elrond's house and a living forest of real, watered plants.",
+        "production_notes": "One of the showrunners said the team 'even shot in the actual valley', meaning aerial plates. Swiss permits are not documented.",
+        "today": "A public valley and village with the Staubbach and Trümmelbach falls, freely accessible and promoted as Tolkien's inspiration for Rivendell.",
+        "link": "https://en.wikipedia.org/wiki/Lauterbrunnen",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/4673_-_Lauterbrunnental_-_Wasserf%C3%A4lle_viewed_from_Morgengabe.JPG?width=640",
+        "image_credit": "Andrew Bossi, via Wikimedia Commons, CC BY-SA 2.5",
+        "sources": [
+          { "label": "Amazon News, Building Rivendell (2026)", "url": "https://www.aboutamazon.com/news/entertainment/lord-of-the-rings-the-rings-of-power-rivendell" },
+          { "label": "Gizmodo, SDCC 2026: Rings of Power showrunners tease season 3 (2026)", "url": "https://gizmodo.com/the-rings-of-power-season-3-is-the-season-weve-been-building-to-2000790666" },
+          { "label": "Wikipedia, The Rings of Power season 3", "url": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Rings_of_Power_season_3" }
+        ]
       }
     }
   ]
