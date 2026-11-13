@@ -93,11 +93,11 @@ bootstrap.Dialog.getOrCreateInstance('#overlay').show();
 <script type="module">
 import { Map as LeafletMap, TileLayer, Marker, GeoJSON, Icon } from 'leaflet';
 
-const map = new LeafletMap('map').setView([-41.292466, 174.778864], 6);
+const map = new LeafletMap('map').setView([-41.7526, 171.6037], 5.5);
 
-new TileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+new TileLayer('https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
   maxZoom: 19,
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+  attribution: '&copy; <a href="https://www.arcgis.com/home/item.html?id=35e374c0c9d44ada8933a2ce5b2b350e">Esri, World Light Gray Base</a>'
 }).addTo(map);
 
 const res = await fetch('./data/locations.json');
@@ -110,9 +110,6 @@ const myIcon = new Icon({
   popupAnchor: [0, -40]
 });
 
-// ---- Popups ----
-
-// Same function as production.html, so popup links and section ids always match.
 function slugify(text) {
   return text
     .toLowerCase()
@@ -125,7 +122,6 @@ function slugify(text) {
 function popupContent(feature) {
   const p = feature.properties;
   const slug = p.slug ?? slugify(p.title);
-
   const meta = [p.production, `Filmed ${p.time}`].filter(Boolean).join(' · ');
 
   const figure = p.image
@@ -152,18 +148,17 @@ function popupContent(feature) {
     </article>`;
 }
 
+// Build the layer group and attach the popup to it (but don't add it to the map;
+// showThrough() adds/removes individual markers based on the slider)
 const locations = new GeoJSON(data, {
   pointToLayer: (feature, latlng) => new Marker(latlng, { icon: myIcon })
-})
-  .bindPopup(layer => popupContent(layer.feature), {
-    className: 'omtr-popup-frame',
-    minWidth: 260,
-    maxWidth: 320
-  })
-  .addTo(map);
+}).bindPopup(layer => popupContent(layer.feature), {
+  className: 'omtr-popup-frame',
+  minWidth: 260,
+  maxWidth: 320
+});
 
-// ---- Timeline slider ----
-
+// Define years BEFORE using them
 const years = [...new Set(data.features.map(f => Number(f.properties.time)))]
   .sort((a, b) => a - b);
 
@@ -173,7 +168,6 @@ const ticks = document.getElementById('timeline-ticks');
 
 range.max = years.length - 1;
 range.value = years.length - 1;
-
 ticks.innerHTML = years.map(y => `<li>${y}</li>`).join('');
 
 function showThrough(year) {
